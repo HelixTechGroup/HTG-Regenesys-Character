@@ -1,0 +1,19 @@
+{
+  "FormKey": "000AA3:HTG-Regenesys-Character.esp",
+  "EditorID": "SpecialAgilityMax",
+  "FormVersion": 576,
+  "Conditions": [
+    {
+      "MutagenObjectType": "ConditionGlobal",
+      "Unknown2": 6830,
+      "Data": {
+        "MutagenObjectType": "GetValueConditionData",
+        "RunOnType": "QuestAlias",
+        "Unknown3": 13,
+        "FirstParameter": "711"
+      },
+      "ComparisonValue": "000A9D:HTG-Regenesys-Character.esp"
+    }
+  ],
+  "Quest": "000907:HTG-Regenesys-Character.esp"
+}

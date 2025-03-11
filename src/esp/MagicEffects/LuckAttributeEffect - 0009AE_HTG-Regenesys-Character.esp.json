@@ -1,0 +1,30 @@
+{
+  "FormKey": "0009AE:HTG-Regenesys-Character.esp",
+  "EditorID": "LuckAttributeEffect",
+  "FormVersion": 576,
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Luck"
+  },
+  "Keywords": [
+    "000A34:HTG-Regenesys-Character.esp"
+  ],
+  "Archetype": {
+    "MutagenObjectType": "MagicEffectArchetype",
+    "Type": "Script"
+  },
+  "Flags": [
+    "Recover",
+    "NoDuration",
+    "NoArea"
+  ],
+  "Unknown": "0x000000000000FFFFFFFF000000000000000000000000",
+  "Unknown2": "[]",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "<mag>"
+  },
+  "DATADataTypeState": [
+    "Break0"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "FormKey": "000A93:HTG-Regenesys-Character.esp",
+  "EditorID": "SpecialPerksManager",
+  "FormVersion": 576,
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "HTG:Character:Special:SpecialPerksManager",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialStrengthPerk",
+            "Object": "00082F:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialCharismaPerk",
+            "Object": "00098D:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialAgilityPerk",
+            "Object": "00098F:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialEndurancePerk",
+            "Object": "00098C:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialIntelligencePerk",
+            "Object": "00098E:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialLuckPerk",
+            "Object": "00098A:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialDisplayPerk",
+            "Object": "000A8F:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialPerceptionPerk",
+            "Object": "00098B:HTG-Regenesys-Character.esp"
+          }
+        ]
+      }
+    ]
+  },
+  "Archetype": {
+    "MutagenObjectType": "MagicEffectArchetype",
+    "Type": "Script"
+  },
+  "Flags": [
+    "Recover",
+    "NoDuration",
+    "NoMagnitude",
+    "NoArea",
+    "HideInUI"
+  ],
+  "Unknown": "0x00000000000000000000000000000000000000000000",
+  "Unknown2": "[]",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": ""
+  },
+  "DATADataTypeState": [
+    "Break0"
+  ]
+}

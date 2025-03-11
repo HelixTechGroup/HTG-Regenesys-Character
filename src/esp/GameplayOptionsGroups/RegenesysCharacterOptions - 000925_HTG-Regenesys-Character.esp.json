@@ -1,0 +1,15 @@
+{
+  "FormKey": "000925:HTG-Regenesys-Character.esp",
+  "EditorID": "RegenesysCharacterOptions",
+  "FormVersion": 576,
+  "Title": {
+    "TargetLanguage": "English",
+    "Value": "Regenesys:Character Options"
+  },
+  "BNAM": "0x00",
+  "Options": [
+    "000926:HTG-Regenesys-Character.esp",
+    "000AA5:HTG-Regenesys-Character.esp",
+    "0009A1:HTG-Regenesys-Character.esp"
+  ]
+}

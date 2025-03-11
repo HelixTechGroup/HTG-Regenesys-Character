@@ -1,0 +1,74 @@
+{
+  "FormKey": "00090E:HTG-Regenesys-Character.esp",
+  "EditorID": "SQ_CharacterLevelEvent",
+  "FormVersion": 576,
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "HTG:Character:Quests:SQ_CharacterLevelEvent",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SystemUtilities",
+            "Object": "000907:HTG-Regenesys-Character.esp",
+            "Alias": 7
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SQ_CharacterController",
+            "Object": "000907:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "ShowAttributesOnLevelUp",
+            "Object": "0009A1:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialTerminal",
+            "Object": "000A96:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AvailablePointsValue",
+            "Object": "000972:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialEnabled",
+            "Object": "000926:HTG-Regenesys-Character.esp"
+          }
+        ]
+      }
+    ],
+    "Versioning": [
+      "Break0"
+    ],
+    "ExtraBindDataVersion": 0,
+    "Script": {
+      "Name": ""
+    }
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Regenesys Character Level Event System Controller"
+  },
+  "Data": {
+    "Priority": 100,
+    "Unused": "0x000000"
+  },
+  "QuestType": "00080F:HTG-System-Core.esm",
+  "Event": "LEVL",
+  "Filter": "Regenesys\\Character\\",
+  "UnusedConditions": [],
+  "Stages": [
+    {
+      "Flags": [
+        "RunOnStart"
+      ]
+    }
+  ],
+  "Aliases": [],
+  "QuestGroup": "000810:HTG-Regenesys-Core.esm",
+  "SwfFile": "skillpatches.swf"
+}

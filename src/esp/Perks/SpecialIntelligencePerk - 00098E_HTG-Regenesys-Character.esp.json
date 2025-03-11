@@ -1,0 +1,83 @@
+{
+  "FormKey": "00098E:HTG-Regenesys-Character.esp",
+  "EditorID": "SpecialIntelligencePerk",
+  "FormVersion": 576,
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "S.P.E.C.I.A.L. Intelligence"
+  },
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "Intelligence is a measure of your overall mental acuity. It affects the number of experience points earned, the amount of material gained from Scrapping, and the difficulty of Hacking and Lockpicking."
+  },
+  "Categroy": "Science",
+  "SkillGroup": "Basic",
+  "Flags": [
+    "PcPlayable"
+  ],
+  "PerkIcon": "Patch_Science_Intelligence",
+  "Ranks": [
+    {
+      "Effects": [
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "EntryPoint": "ModExp",
+          "PerkConditionTabCount": 3,
+          "PerkEntryID": 0,
+          "ActorValue": "0002C6:Starfield.esm",
+          "Value": 0.02,
+          "Modification": "MultiplyOnePlusAVMult"
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "EntryPoint": "ModScrapRewardMult",
+          "PerkConditionTabCount": 1,
+          "PerkEntryID": 1,
+          "ActorValue": "0002C6:Starfield.esm",
+          "Value": 0.02,
+          "Modification": "MultiplyOnePlusAVMult"
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "EntryPoint": "ModHackingGuesses",
+          "PerkConditionTabCount": 1,
+          "PerkEntryID": 4,
+          "ActorValue": "0002C6:Starfield.esm",
+          "Value": 0.02
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "EntryPoint": "ModAutoLockpickingChance",
+          "PerkConditionTabCount": 2,
+          "PerkEntryID": 6,
+          "ActorValue": "0002C6:Starfield.esm",
+          "Value": 0.02
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "EntryPoint": "ModAutoHackingChance",
+          "PerkConditionTabCount": 2,
+          "PerkEntryID": 7,
+          "ActorValue": "0002C6:Starfield.esm",
+          "Value": 0.02
+        }
+      ],
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16618,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ],
+      "Description": {
+        "TargetLanguage": "English",
+        "Value": "Grants 2% bonus to EXP gained, and 2% bonus to Scrap amount per point allocated to Intelligence"
+      }
+    }
+  ]
+}

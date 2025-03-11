@@ -1,0 +1,17 @@
+[
+	"Data\\SCRIPTS\\HTG\\Character\\Special\\SpecialPerksManager.pex",
+	"Data\\SCRIPTS\\HTG\\Character\\Quests\\SQ_CharacterController.pex",
+	"Data\\SCRIPTS\\HTG\\Character\\Quests\\SQ_CharacterLevelEvent.pex",
+	"Data\\SCRIPTS\\HTG\\Character\\Terminals\\SpecialSystemMenu.pex",
+	"Data\\Scripts\\HTG\\Character\\Structs.pex",
+	"Data\\Interface\\skillpatches.gfx",
+	"Data\\Interface\\skillpatches.swf",
+	"Data\\Interface\\skillpatches_lrg.swf",
+	"Data\\Interface\\statusmenu.swf",
+	"Data\\Interface\\statusmenu_lrg.swf",
+	"Data\\Textures\\interface\\skillpatches\\patch_physical_strength_full_rank0.dds",
+	"Data\\Textures\\interface\\skillpatches\\patch_physical_strength_full_rank1.dds",
+	"Data\\Textures\\interface\\skillpatches\\patch_physical_strength_full_rank2.dds",
+	"Data\\Textures\\interface\\skillpatches\\patch_physical_strength_full_rank3.dds",
+	"Data\\Textures\\interface\\skillpatches\\patch_physical_strength_full_rank4.dds"
+]

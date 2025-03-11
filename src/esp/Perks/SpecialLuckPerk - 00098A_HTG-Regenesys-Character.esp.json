@@ -1,0 +1,89 @@
+{
+  "FormKey": "00098A:HTG-Regenesys-Character.esp",
+  "EditorID": "SpecialLuckPerk",
+  "FormVersion": 576,
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "S.P.E.C.I.A.L. Luck"
+  },
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "Luck is a measure of general good fortune, and affects rate of Critical Hits as well as Critial Chance of Research Projects and Freebies from Crafting."
+  },
+  "Categroy": "Social",
+  "SkillGroup": "Basic",
+  "Flags": [
+    "PcPlayable"
+  ],
+  "PerkIcon": "Patch_Social_Luck",
+  "Ranks": [
+    {
+      "Effects": [
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "EntryPoint": "ModResearchCritChance",
+          "PerkConditionTabCount": 1,
+          "PerkEntryID": 0,
+          "ActorValue": "0002C8:Starfield.esm",
+          "Value": 0.02
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "EntryPoint": "ModMyCriticalHitChance",
+          "PerkConditionTabCount": 3,
+          "PerkEntryID": 1,
+          "ActorValue": "0002C8:Starfield.esm",
+          "Value": 0.02
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "EntryPoint": "ModCriticalChanceonTargetLockedSpaceship",
+          "PerkConditionTabCount": 2,
+          "PerkEntryID": 2,
+          "ActorValue": "0002C8:Starfield.esm",
+          "Value": 0.02
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "EntryPoint": "ModCraftingModFreebieChance",
+          "PerkConditionTabCount": 2,
+          "PerkEntryID": 3,
+          "ActorValue": "0002C8:Starfield.esm",
+          "Value": 0.02
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "EntryPoint": "ModCraftingFreebieChance",
+          "PerkConditionTabCount": 2,
+          "PerkEntryID": 4,
+          "ActorValue": "0002C8:Starfield.esm",
+          "Value": 0.02
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "EntryPoint": "ModCraftingDupeChance",
+          "PerkConditionTabCount": 2,
+          "PerkEntryID": 6,
+          "ActorValue": "0002C6:Starfield.esm",
+          "Value": 0.02
+        }
+      ],
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16618,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ],
+      "Description": {
+        "TargetLanguage": "English",
+        "Value": "Grants 2% bonus to Research Critical Chance, 2% bonus to Weapon Critical Chance, and 2% bonus to Crafting Freebie Chance per point allocated to Luck"
+      }
+    }
+  ]
+}

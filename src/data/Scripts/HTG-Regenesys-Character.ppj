@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<PapyrusProject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Output="S:\XboxGames\Starfield\Content\Data\Scripts" Flags="S:\XboxGames\Starfield\Content\Data\Scripts\Source\Starfield_Papyrus_Flags.flg" xmlns="PapyrusProject.xsd">
+  <Imports>
+    <Import>S:\XboxGames\Starfield\Content\Data\Scripts\Source</Import>
+  </Imports>
+  <Scripts>
+    <Script>HTG:Character:Structs</Script>
+    <Script>HTG:Character:Quests:SQ_CharacterController</Script>
+    <Script>HTG:Character:Quests:SQ_CharacterLevelEvent</Script>
+    <Script>HTG:Character:Special:SpecialPerksManager</Script>
+    <Script>HTG:Character:Terminals:SpecialSystemMenu</Script>
+  </Scripts>
+</PapyrusProject>

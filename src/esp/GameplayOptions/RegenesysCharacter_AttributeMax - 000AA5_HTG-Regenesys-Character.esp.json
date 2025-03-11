@@ -1,0 +1,59 @@
+{
+  "FormKey": "000AA5:HTG-Regenesys-Character.esp",
+  "EditorID": "RegenesysCharacter_AttributeMax",
+  "FormVersion": 576,
+  "Title": {
+    "TargetLanguage": "English",
+    "Value": "Attribute Maximum"
+  },
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "Defines the Highest each Attribute can be set to.\n"
+  },
+  "TNAM": "0x01",
+  "DefaultIndex": "0x00002041",
+  "WNAM": "0x00002041",
+  "GPOD": {
+    "Unknown1": 10.0,
+    "Unknown2": 20.0,
+    "Unknown3": 5.0
+  },
+  "SliderEntries": [
+    {
+      "Description": {
+        "TargetLanguage": "English",
+        "Value": ""
+      },
+      "SliderIndex": 10.0,
+      "Name": {
+        "TargetLanguage": "English",
+        "Value": "10"
+      },
+      "XpMultiplier": 0.0
+    },
+    {
+      "Description": {
+        "TargetLanguage": "English",
+        "Value": ""
+      },
+      "SliderIndex": 15.0,
+      "Name": {
+        "TargetLanguage": "English",
+        "Value": "15"
+      },
+      "XpMultiplier": -5.0
+    },
+    {
+      "Description": {
+        "TargetLanguage": "English",
+        "Value": ""
+      },
+      "SliderIndex": 20.0,
+      "Name": {
+        "TargetLanguage": "English",
+        "Value": "20"
+      },
+      "XpMultiplier": -10.0
+    }
+  ]
+}

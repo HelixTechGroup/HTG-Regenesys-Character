@@ -1,0 +1,30 @@
+{
+  "FormKey": "0008F4:HTG-Regenesys-Character.esp",
+  "EditorID": "StrengthAttributeEffect",
+  "FormVersion": 576,
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Strength"
+  },
+  "Keywords": [
+    "000944:HTG-Regenesys-Character.esp"
+  ],
+  "Archetype": {
+    "MutagenObjectType": "MagicEffectArchetype",
+    "Type": "Script"
+  },
+  "Flags": [
+    "Recover",
+    "NoDuration",
+    "NoArea"
+  ],
+  "Unknown": "0x000000000000FFFFFFFF000000000000000000000000",
+  "Unknown2": "[]",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "<mag>"
+  },
+  "DATADataTypeState": [
+    "Break0"
+  ]
+}
