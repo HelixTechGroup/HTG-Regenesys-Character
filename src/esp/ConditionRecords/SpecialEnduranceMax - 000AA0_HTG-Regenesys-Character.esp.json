@@ -5,12 +5,23 @@
   "Conditions": [
     {
       "MutagenObjectType": "ConditionGlobal",
-      "Unknown2": 6830,
+      "CompareOperator": "LessThanOrEqualTo",
+      "Unknown2": 7580,
       "Data": {
         "MutagenObjectType": "GetValueConditionData",
         "RunOnType": "QuestAlias",
         "Unknown3": 13,
         "FirstParameter": "708"
+      },
+      "ComparisonValue": "000A9D:HTG-Regenesys-Character.esp"
+    },
+    {
+      "MutagenObjectType": "ConditionGlobal",
+      "CompareOperator": "LessThan",
+      "Unknown2": 7580,
+      "Data": {
+        "MutagenObjectType": "GetGlobalValueConditionData",
+        "FirstParameter": "00097B:HTG-Regenesys-Character.esp"
       },
       "ComparisonValue": "000A9D:HTG-Regenesys-Character.esp"
     }

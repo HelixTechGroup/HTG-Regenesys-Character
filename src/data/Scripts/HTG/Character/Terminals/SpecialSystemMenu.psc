@@ -3,13 +3,14 @@ import HTG
 import HTG:Character:Structs
 
 Quest Property SQ_CharacterController Mandatory Const Auto
-GlobalVariable Property Special_FirstActivation Mandatory Const Auto
+GlobalVariable Property FirstActivation Mandatory Const Auto
 
 Group AttributeDisplay
 Perk Property SpecialDisplay Mandatory Const Auto
 EndGroup
 
 Group AttributePoints
+GlobalVariable Property AttributeMax Mandatory Const Auto
 GlobalVariable Property AvailablePoints Mandatory Const Auto
 ActorValue Property AvailablePointsValue Mandatory Const Auto
 EndGroup
@@ -74,6 +75,7 @@ Float newAgiValue
 Float newLucValue
 Int _initialPoints
 CharacterStageIds _stages
+Guard _pointGuard ProtectsFunctionLogic
 
 Event OnTerminalMenuEnter(TerminalMenu akTerminalBase, ObjectReference akTerminalRef)
     Parent.OnTerminalMenuEnter(akTerminalBase, akTerminalRef)
@@ -94,31 +96,31 @@ Event OnTerminalMenuItemRun(int auiMenuItemID, TerminalMenu akTerminalBase, Obje
     Actor kPlayer = CurrentActor.GetActorRef()
 
     If (auiMenuItemID == _strengthAddItemId)
-        AddPoint(StrengthChanged)
+        AddPoint(StrengthValue, StrengthChanged)
     ElseIf (auiMenuItemID == _strengthRemoveItemId)
         RemovePoint(StrengthChanged)
     ElseIf (auiMenuItemID == _perceptionAddItemId)
-        AddPoint(PerceptionChanged)
+        AddPoint(PerceptionValue, PerceptionChanged)
     ElseIf (auiMenuItemID == _perceptionRemoveItemId)
         RemovePoint(PerceptionChanged)
     ElseIf (auiMenuItemID == _enduranceAddItemId)
-        AddPoint(EnduranceChanged)
+        AddPoint(EnduranceValue, EnduranceChanged)
     ElseIf (auiMenuItemID == _enduranceRemoveItemId)
         RemovePoint(EnduranceChanged)
     ElseIf (auiMenuItemID == _charismaAddItemId)
-        AddPoint(CharismaChanged)
+        AddPoint(CharismaValue, CharismaChanged)
     ElseIf (auiMenuItemID == _charismaRemoveItemId)
         RemovePoint(CharismaChanged)
     ElseIf (auiMenuItemID == _intelligenceAddItemId)
-        AddPoint(IntelligenceChanged)
+        AddPoint(IntelligenceValue, IntelligenceChanged)
     ElseIf (auiMenuItemID == _intelligenceRemoveItemId)
         RemovePoint(IntelligenceChanged)
+    ElseIf (auiMenuItemID == _agilityAddItemId)
+        AddPoint(AgilityValue, AgilityChanged)
     ElseIf (auiMenuItemID == _agilityRemoveItemId)
-        AddPoint(AgilityChanged)
-    ElseIf (auiMenuItemID == _strengthRemoveItemId)
         RemovePoint(AgilityChanged)
     ElseIf (auiMenuItemID == _luckAddItemId)
-        AddPoint(LuckChanged)
+        AddPoint(LuckValue, LuckChanged)
     ElseIf (auiMenuItemID == _luckRemoveItemId)
         RemovePoint(LuckChanged)
     ElseIf (auiMenuItemID == _clearItemId)
@@ -132,8 +134,8 @@ Event OnTerminalMenuItemRun(int auiMenuItemID, TerminalMenu akTerminalBase, Obje
             ResetAttributes()
         EndIf
 
-        If Special_FirstActivation.GetValueInt() == 1
-            Special_FirstActivation.SetValue(0.0)
+        If FirstActivation.GetValueInt() == 1
+            FirstActivation.SetValue(0.0)
         EndIf
         ResetPoints.SetValueInt(0)
     ElseIf (auiMenuItemID == _exitItemId)
@@ -147,8 +149,14 @@ Event OnTerminalMenuItemRun(int auiMenuItemID, TerminalMenu akTerminalBase, Obje
             SQ_CharacterController.SetStage(_stages.SpecialNoPointsId)
         EndIf
 
-        ClearChangedValues()
+        ClearAllocatedPoints()
         TraceAttributes()
+    Else
+        Logger.Log("Current ItemId: " + auiMenuItemID)
+        kPlayer.RemovePerk(SpecialDisplay)
+        kPlayer.AddPerk(SpecialDisplay)
+        ClearAllocatedPoints()
+        ; TraceAttributes()
     EndIf
 
     SetTextValues(akTerminalRef)
@@ -158,6 +166,7 @@ Function SetTextValues(ObjectReference akTerminalRef)
     Actor kPlayer = CurrentActor.GetActorRef()
 
     CalculateNewValues()
+
     akTerminalRef.AddTextReplacementValue(_strengthToken, newStrValue)
     akTerminalRef.AddTextReplacementValue(_perceptionToken, newPerValue)
     akTerminalRef.AddTextReplacementValue(_enduranceToken, newEndValue)
@@ -168,17 +177,36 @@ Function SetTextValues(ObjectReference akTerminalRef)
     akTerminalRef.AddTextReplacementValue(_availableToken, AvailablePoints.GetValue())
 EndFunction
 
-Function AddPoint(GlobalVariable akAttribute)
-    akAttribute.SetValue(akAttribute.GetValue() + 1.0)        
-    AvailablePoints.SetValue(AvailablePoints.GetValue() - 1.0) 
+Function AddPoint(ActorValue akAttribute, GlobalVariable akAttributeChanged)
+    Actor kPlayer = CurrentActor.GetActorRef()
+    Int kMax = AttributeMax.GetValueInt()
+    Int kCurrentAttr = kPlayer.GetValueInt(akAttribute)
+    Int kChangedAttr = akAttributeChanged.GetValueInt()
+
+    TryLockGuard _pointGuard
+    Int kTotal = (kCurrentAttr + kChangedAttr) + 1
+    Logger.Log("Player Add Point Check:" + \
+                    "\n\tMax Value:" + kMax + \
+                    "\n\tCurrent Value:" + kCurrentAttr + \
+                    "\n\tChanged Value:" + kChangedAttr + \
+                    "\n\tTotal:" + kTotal)
+
+    If kTotal <= kMax
+        akAttributeChanged.SetValue(akAttributeChanged.GetValue() + 1.0)        
+        AvailablePoints.SetValue(AvailablePoints.GetValue() - 1.0) 
+    EndIf
+    EndTryLockGuard
 EndFunction
 
 Function RemovePoint(GlobalVariable akAttribute)
+    TryLockGuard _pointGuard
     akAttribute.SetValue(akAttribute.GetValue() - 1.0)        
-    AvailablePoints.SetValue(AvailablePoints.GetValue() + 1.0) 
+    AvailablePoints.SetValue(AvailablePoints.GetValue() + 1.0)
+    EndTryLockGuard 
 EndFunction
 
 Function ClearChangedValues()
+    TryLockGuard _pointGuard
     StrengthChanged.SetValueInt(0)
     PerceptionChanged.SetValueInt(0)
     EnduranceChanged.SetValueInt(0)
@@ -186,12 +214,15 @@ Function ClearChangedValues()
     IntelligenceChanged.SetValueInt(0)
     AgilityChanged.SetValueInt(0)
     LuckChanged.SetValueInt(0)
+    EndTryLockGuard
 EndFunction
 
 Function ApplyChangedValues()
     Actor kPlayer = CurrentActor.GetActorRef()
     TraceAttributes()
     CalculateNewValues()
+
+    TryLockGuard _pointGuard
     If StrengthChanged.GetValue() > 0.0
         kPlayer.SetValue(StrengthValue, newStrValue)
     EndIf
@@ -213,6 +244,7 @@ Function ApplyChangedValues()
     If LuckChanged.GetValue() > 0.0
         kPlayer.SetValue(LuckValue, newLucValue)
     EndIf
+    EndTryLockGuard
 
     ClearChangedValues()
     TraceAttributes()
@@ -221,6 +253,7 @@ EndFunction
 Function CalculateNewValues()
     Actor kPlayer = CurrentActor.GetActorRef()
 
+    TryLockGuard _pointGuard
     newStrValue = kPlayer.GetValue(StrengthValue) + StrengthChanged.GetValue()
     newPerValue = kPlayer.GetValue(PerceptionValue) + PerceptionChanged.GetValue()
     newEndValue = kPlayer.GetValue(EnduranceValue) + EnduranceChanged.GetValue()
@@ -228,6 +261,7 @@ Function CalculateNewValues()
     newIntValue = kPlayer.GetValue(IntelligenceValue) + IntelligenceChanged.GetValue()
     newAgiValue = kPlayer.GetValue(AgilityValue) + AgilityChanged.GetValue()
     newLucValue = kPlayer.GetValue(LuckValue) + LuckChanged.GetValue()
+    EndTryLockGuard
 EndFunction
 
 Function TraceAttributes()
@@ -254,6 +288,7 @@ Function ResetAttributes()
     ClearAllocatedPoints()
     TraceAttributes()
 
+    TryLockGuard _pointGuard
     kPlayer.SetValue(StrengthValue, 1)
     kPlayer.SetValue(PerceptionValue, 1)
     kPlayer.SetValue(EnduranceValue, 1)
@@ -261,6 +296,7 @@ Function ResetAttributes()
     kPlayer.SetValue(IntelligenceValue, 1)
     kPlayer.SetValue(AgilityValue, 1)
     kPlayer.SetValue(LuckValue, 1)
+    EndTryLockGuard
 
     TraceAttributes()
 EndFunction

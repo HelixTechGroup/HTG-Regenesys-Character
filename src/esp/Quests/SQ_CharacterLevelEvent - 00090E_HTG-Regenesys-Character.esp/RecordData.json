@@ -30,13 +30,18 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AvailablePointsValue",
+            "Name": "SpecialEnabled",
+            "Object": "000926:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AttributePointsValue",
             "Object": "000972:HTG-Regenesys-Character.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialEnabled",
-            "Object": "000926:HTG-Regenesys-Character.esp"
+            "Name": "PlayerRef",
+            "Object": "000014:Starfield.esm"
           }
         ]
       }

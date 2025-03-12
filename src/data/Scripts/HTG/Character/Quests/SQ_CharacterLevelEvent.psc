@@ -5,6 +5,7 @@ import HTG:UtilityExt
 import HTG:Character:Structs
 import Math
 
+ObjectReference Property PlayerRef Mandatory Const Auto
 Quest Property SQ_CharacterController Mandatory Const Auto
 GameplayOption Property SpecialEnabled Mandatory Const Auto 
 GameplayOption Property ShowAttributesOnLevelUp Mandatory Const Auto
@@ -18,7 +19,7 @@ Event OnQuestStarted()
     Parent.OnQuestStarted()
     
     If SpecialEnabled.GetValue() == 1.0
-        Actor kPlayer = Game.GetPlayer()
+        Actor kPlayer = PlayerRef as Actor
         Bool kShowUI = FloatToBool(ShowAttributesOnLevelUp.GetValue())
         Int kLevel = kPlayer.GetLevel()
         Float kPoints = kPlayer.GetValue(AttributePointsValue)

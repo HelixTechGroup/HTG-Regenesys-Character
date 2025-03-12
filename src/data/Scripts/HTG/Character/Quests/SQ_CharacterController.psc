@@ -7,7 +7,9 @@ ObjectReference Property PlayerRef Mandatory Const Auto
 
 Group SPECIAL_System
 GameplayOption Property SpecialEnabled Mandatory Const Auto 
+GameplayOption Property AttributeMaxOption Mandatory Const Auto
 GlobalVariable Property Special_FirstActivation Mandatory Const Auto
+GlobalVariable Property Special_AttributeMax Mandatory Const Auto
 ActorValue Property AvailablePointsValue Mandatory Const Auto
 Perk Property SpecialPlayerTrait Mandatory Const Auto
 Message Property SpecialSetup Mandatory Const Auto
@@ -87,6 +89,11 @@ EndEvent
 Event OnGameplayOptionChanged(GameplayOption[] aChangedOptions)
     If aChangedOptions.Find(SpecialEnabled) >= 0
         SetStage(_stages.SpecialId)
+    EndIf
+
+    Int kMaxIndex = aChangedOptions.Find(AttributeMaxOption)
+    If kMaxIndex >= 0
+        Special_AttributeMax.SetValue(aChangedOptions[kMaxIndex].GetValue())
     EndIf
     GameplayOption.NotifyGameplayOptionUpdateFinished()
 EndEvent

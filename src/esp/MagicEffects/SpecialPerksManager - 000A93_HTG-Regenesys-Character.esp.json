@@ -9,33 +9,8 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialStrengthPerk",
-            "Object": "00082F:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialCharismaPerk",
-            "Object": "00098D:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialAgilityPerk",
-            "Object": "00098F:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialEndurancePerk",
-            "Object": "00098C:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialIntelligencePerk",
-            "Object": "00098E:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialLuckPerk",
-            "Object": "00098A:HTG-Regenesys-Character.esp"
+            "Name": "SpecialPerceptionPerk",
+            "Object": "00098B:HTG-Regenesys-Character.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -44,8 +19,33 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialPerceptionPerk",
-            "Object": "00098B:HTG-Regenesys-Character.esp"
+            "Name": "SpecialStrengthPerk",
+            "Object": "00082F:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialLuckPerk",
+            "Object": "00098A:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialIntelligencePerk",
+            "Object": "00098E:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialEndurancePerk",
+            "Object": "00098C:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialAgilityPerk",
+            "Object": "00098F:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialCharismaPerk",
+            "Object": "00098D:HTG-Regenesys-Character.esp"
           }
         ]
       }

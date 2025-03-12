@@ -9,13 +9,18 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SQ_CharacterController",
+            "Object": "000907:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "CharismaChanged",
             "Object": "00097C:HTG-Regenesys-Character.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "EnduranceChanged",
-            "Object": "00097B:HTG-Regenesys-Character.esp"
+            "Name": "StrengthChanged",
+            "Object": "000973:HTG-Regenesys-Character.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -24,30 +29,8 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SQ_CharacterController",
-            "Object": "000907:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "currentActor",
-            "Object": "000907:HTG-Regenesys-Character.esp",
-            "Alias": 13
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Special_FirstActivation",
-            "Object": "000988:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SystemUtilities",
-            "Object": "000907:HTG-Regenesys-Character.esp",
-            "Alias": 7
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "StrengthChanged",
-            "Object": "000973:HTG-Regenesys-Character.esp"
+            "Name": "EnduranceChanged",
+            "Object": "00097B:HTG-Regenesys-Character.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -63,6 +46,12 @@
             "MutagenObjectType": "ScriptObjectProperty",
             "Name": "IntelligenceValue",
             "Object": "0002C6:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "currentActor",
+            "Object": "000907:HTG-Regenesys-Character.esp",
+            "Alias": 13
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -96,6 +85,12 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SystemUtilities",
+            "Object": "000907:HTG-Regenesys-Character.esp",
+            "Alias": 7
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "LuckChanged",
             "Object": "00097F:HTG-Regenesys-Character.esp"
           },
@@ -118,6 +113,16 @@
             "MutagenObjectType": "ScriptObjectProperty",
             "Name": "AvailablePointsValue",
             "Object": "000972:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AttributeMax",
+            "Object": "000A9D:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "FirstActivation",
+            "Object": "000988:HTG-Regenesys-Character.esp"
           }
         ]
       }
@@ -224,7 +229,8 @@
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000A9F:HTG-Regenesys-Character.esp"
-          }
+          },
+          "ComparisonValue": 1.0
         },
         {
           "MutagenObjectType": "ConditionFloat",
@@ -308,7 +314,8 @@
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000A9E:HTG-Regenesys-Character.esp"
-          }
+          },
+          "ComparisonValue": 1.0
         },
         {
           "MutagenObjectType": "ConditionFloat",
@@ -392,7 +399,8 @@
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000AA0:HTG-Regenesys-Character.esp"
-          }
+          },
+          "ComparisonValue": 1.0
         },
         {
           "MutagenObjectType": "ConditionFloat",
@@ -477,7 +485,8 @@
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000AA1:HTG-Regenesys-Character.esp"
-          }
+          },
+          "ComparisonValue": 1.0
         },
         {
           "MutagenObjectType": "ConditionFloat",
@@ -563,7 +572,8 @@
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000AA2:HTG-Regenesys-Character.esp"
-          }
+          },
+          "ComparisonValue": 1.0
         },
         {
           "MutagenObjectType": "ConditionFloat",
@@ -649,7 +659,8 @@
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000AA3:HTG-Regenesys-Character.esp"
-          }
+          },
+          "ComparisonValue": 1.0
         },
         {
           "MutagenObjectType": "ConditionFloat",
@@ -734,7 +745,8 @@
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000AA4:HTG-Regenesys-Character.esp"
-          }
+          },
+          "ComparisonValue": 1.0
         },
         {
           "MutagenObjectType": "ConditionFloat",
