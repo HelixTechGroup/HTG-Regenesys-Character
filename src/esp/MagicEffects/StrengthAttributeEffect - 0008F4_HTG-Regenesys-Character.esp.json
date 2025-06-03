@@ -1,7 +1,6 @@
 {
   "FormKey": "0008F4:HTG-Regenesys-Character.esp",
   "EditorID": "StrengthAttributeEffect",
-  "FormVersion": 576,
   "Name": {
     "TargetLanguage": "English",
     "Value": "Strength"

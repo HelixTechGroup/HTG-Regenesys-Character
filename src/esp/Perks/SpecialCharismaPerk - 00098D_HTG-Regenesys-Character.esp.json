@@ -1,7 +1,6 @@
 {
   "FormKey": "00098D:HTG-Regenesys-Character.esp",
   "EditorID": "SpecialCharismaPerk",
-  "FormVersion": 576,
   "Name": {
     "TargetLanguage": "English",
     "Value": "S.P.E.C.I.A.L. Charisma"
@@ -21,36 +20,36 @@
       "Effects": [
         {
           "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "PerkEntryID": 1,
           "EntryPoint": "ModPersuasion_Skill_Player_Success_Chance",
           "PerkConditionTabCount": 1,
-          "PerkEntryID": 1,
           "ActorValue": "0002C5:Starfield.esm",
           "Value": 0.02,
           "Modification": "MultiplyOnePlusAVMult"
         },
         {
           "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "PerkEntryID": 2,
           "EntryPoint": "ModCharismaChallengeChance",
           "PerkConditionTabCount": 2,
-          "PerkEntryID": 2,
           "ActorValue": "0002C5:Starfield.esm",
           "Value": 0.1,
           "Modification": "MultiplyOnePlusAVMult"
         },
         {
           "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "PerkEntryID": 3,
           "EntryPoint": "ModSellPrices",
           "PerkConditionTabCount": 2,
-          "PerkEntryID": 3,
           "ActorValue": "0002C5:Starfield.esm",
           "Value": 0.02,
           "Modification": "MultiplyOnePlusAVMult"
         },
         {
           "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "PerkEntryID": 4,
           "EntryPoint": "ModBuyPrices",
           "PerkConditionTabCount": 2,
-          "PerkEntryID": 4,
           "ActorValue": "0002C5:Starfield.esm",
           "Value": -0.02,
           "Modification": "MultiplyOnePlusAVMult"
@@ -59,7 +58,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16618,
+          "Unknown2": 16631,
           "Data": {
             "MutagenObjectType": "UnknownConditionData",
             "Function": "961",

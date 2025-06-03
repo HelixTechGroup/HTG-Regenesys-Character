@@ -1,7 +1,6 @@
 {
   "FormKey": "00098E:HTG-Regenesys-Character.esp",
   "EditorID": "SpecialIntelligencePerk",
-  "FormVersion": 576,
   "Name": {
     "TargetLanguage": "English",
     "Value": "S.P.E.C.I.A.L. Intelligence"
@@ -21,43 +20,43 @@
       "Effects": [
         {
           "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "PerkEntryID": 0,
           "EntryPoint": "ModExp",
           "PerkConditionTabCount": 3,
-          "PerkEntryID": 0,
           "ActorValue": "0002C6:Starfield.esm",
           "Value": 0.02,
           "Modification": "MultiplyOnePlusAVMult"
         },
         {
           "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "PerkEntryID": 1,
           "EntryPoint": "ModScrapRewardMult",
           "PerkConditionTabCount": 1,
-          "PerkEntryID": 1,
           "ActorValue": "0002C6:Starfield.esm",
           "Value": 0.02,
           "Modification": "MultiplyOnePlusAVMult"
         },
         {
           "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "PerkEntryID": 4,
           "EntryPoint": "ModHackingGuesses",
           "PerkConditionTabCount": 1,
-          "PerkEntryID": 4,
           "ActorValue": "0002C6:Starfield.esm",
           "Value": 0.02
         },
         {
           "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "PerkEntryID": 6,
           "EntryPoint": "ModAutoLockpickingChance",
           "PerkConditionTabCount": 2,
-          "PerkEntryID": 6,
           "ActorValue": "0002C6:Starfield.esm",
           "Value": 0.02
         },
         {
           "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "PerkEntryID": 7,
           "EntryPoint": "ModAutoHackingChance",
           "PerkConditionTabCount": 2,
-          "PerkEntryID": 7,
           "ActorValue": "0002C6:Starfield.esm",
           "Value": 0.02
         }
@@ -65,7 +64,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16618,
+          "Unknown2": 16631,
           "Data": {
             "MutagenObjectType": "UnknownConditionData",
             "Function": "961",

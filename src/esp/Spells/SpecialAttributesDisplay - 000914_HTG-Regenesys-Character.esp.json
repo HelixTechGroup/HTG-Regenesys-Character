@@ -1,8 +1,6 @@
 {
   "FormKey": "000914:HTG-Regenesys-Character.esp",
   "EditorID": "SpecialAttributesDisplay",
-  "FormVersion": 576,
-  "ODTY": 0.0,
   "Name": {
     "TargetLanguage": "English",
     "Value": "SPECIAL_ATTRIBUTES_DISPLAY"

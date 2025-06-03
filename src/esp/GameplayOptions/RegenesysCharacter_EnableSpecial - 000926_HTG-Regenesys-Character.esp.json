@@ -1,8 +1,7 @@
 {
   "FormKey": "000926:HTG-Regenesys-Character.esp",
   "EditorID": "RegenesysCharacter_EnableSpecial",
-  "FormVersion": 576,
-  "Title": {
+  "Name": {
     "TargetLanguage": "English",
     "Value": "Enable The S.P.E.C.I.A.L. System"
   },
@@ -10,7 +9,9 @@
     "TargetLanguage": "English",
     "Value": "Enables a Fallout like version of The S.P.E.C.I.A.L. System"
   },
-  "TNAM": "0x00",
-  "DefaultIndex": "0x01",
-  "WNAM": "0x01"
+  "Data": {
+    "MutagenObjectType": "BoolGameplayOptionData",
+    "Value1": true,
+    "Value2": true
+  }
 }

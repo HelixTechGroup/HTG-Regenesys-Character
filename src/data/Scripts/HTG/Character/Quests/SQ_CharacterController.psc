@@ -1,5 +1,6 @@
 Scriptname HTG:Character:Quests:SQ_CharacterController extends HTG:QuestExt
 {Regenesys:Character - System Controller}
+import HTG:FormUtility
 import HTG:UtilityExt
 import HTG:Character:Structs
 
@@ -23,7 +24,6 @@ Event OnQuestStarted()
 
     RegisterForGameplayOptionChangedEvent()
     SetStage(_stages.SpecialId)
-    ; Debug.Notification("Regenesys:Character has been started.")
 EndEvent
 
 Event OnQuestShutdown()
@@ -31,12 +31,15 @@ Event OnQuestShutdown()
 EndEvent
 
 Event OnStageSet(int auiStageID, int auiItemID)
+    Parent.OnStageSet(auiStageID, auiItemID)
+
     Actor kPlayer = PlayerRef as Actor
+
     If auiStageID == _stages.SpecialId
         If SpecialEnabled.GetValue() == 1.0
             If Special_FirstActivation.GetValue() == 1.0
                 Int kLevel = kPlayer.GetLevel()
-                Int kPoints = 10
+                Int kPoints = Special_AttributeMax.GetValueInt()
                 If kLevel > 1
                     kPoints += (kLevel / 2) + (kLevel / 10)
                 EndIf
@@ -80,21 +83,33 @@ Event OnStageSet(int auiStageID, int auiItemID)
                 SetStage(_stages.SpecialNoPointsId)
             EndIf
         ElseIf auiStageID == _stages.SpecialNoPointsId
-            Logger.Log("Deactivating SPECIAL System quest objective.")
+                    Logger.Log("Deactivating SPECIAL System quest objective.")
             SetObjectiveCompleted(_stages.SpecialAlertId)
         EndIf
     EndIf
 EndEvent
 
 Event OnGameplayOptionChanged(GameplayOption[] aChangedOptions)
+    Parent.OnGameplayOptionChanged(aChangedOptions)
+
+    Actor kPlayer = PlayerRef as Actor
+
     If aChangedOptions.Find(SpecialEnabled) >= 0
         SetStage(_stages.SpecialId)
     EndIf
 
     Int kMaxIndex = aChangedOptions.Find(AttributeMaxOption)
     If kMaxIndex >= 0
-        Special_AttributeMax.SetValue(aChangedOptions[kMaxIndex].GetValue())
+        Int kMax = Math.Ceiling(aChangedOptions[kMaxIndex].GetValue())
+        Int kPoints = kMax - 10
+        If kPoints > 0
+            kPoints += kPlayer.GetValueInt(AvailablePointsValue)
+            kPlayer.SetValue(AvailablePointsValue, kPoints)
+        EndIf
+
+        Special_AttributeMax.SetValueInt(kMax)
     EndIf
+
     GameplayOption.NotifyGameplayOptionUpdateFinished()
 EndEvent
 

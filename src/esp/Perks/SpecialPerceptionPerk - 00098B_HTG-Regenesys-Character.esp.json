@@ -1,7 +1,6 @@
 {
   "FormKey": "00098B:HTG-Regenesys-Character.esp",
   "EditorID": "SpecialPerceptionPerk",
-  "FormVersion": 576,
   "Name": {
     "TargetLanguage": "English",
     "Value": "S.P.E.C.I.A.L. Perception"
@@ -21,9 +20,9 @@
       "Effects": [
         {
           "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "PerkEntryID": 0,
           "EntryPoint": "ModConeoffireMult",
           "PerkConditionTabCount": 2,
-          "PerkEntryID": 0,
           "ActorValue": "0002C3:Starfield.esm",
           "Value": -0.02,
           "Modification": "MultiplyOnePlusAVMult"
@@ -32,7 +31,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16618,
+          "Unknown2": 16631,
           "Data": {
             "MutagenObjectType": "UnknownConditionData",
             "Function": "961",

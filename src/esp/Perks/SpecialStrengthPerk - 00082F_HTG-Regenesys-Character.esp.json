@@ -1,7 +1,6 @@
 {
   "FormKey": "00082F:HTG-Regenesys-Character.esp",
   "EditorID": "SpecialStrengthPerk",
-  "FormVersion": 576,
   "Name": {
     "TargetLanguage": "English",
     "Value": "S.P.E.C.I.A.L. Strength"
@@ -30,7 +29,7 @@
                   "Flags": [
                     "OR"
                   ],
-                  "Unknown2": 16618,
+                  "Unknown2": 16631,
                   "Data": {
                     "MutagenObjectType": "HasKeywordConditionData",
                     "FirstParameter": "04A0A4:Starfield.esm"
@@ -42,7 +41,7 @@
                   "Flags": [
                     "OR"
                   ],
-                  "Unknown2": 16618,
+                  "Unknown2": 16631,
                   "Data": {
                     "MutagenObjectType": "HasKeywordConditionData",
                     "FirstParameter": "04A0A5:Starfield.esm"
@@ -54,7 +53,7 @@
                   "Flags": [
                     "OR"
                   ],
-                  "Unknown2": 16618,
+                  "Unknown2": 16631,
                   "Data": {
                     "MutagenObjectType": "HasKeywordConditionData",
                     "FirstParameter": "05240E:Starfield.esm"
@@ -64,18 +63,18 @@
               ]
             }
           ],
+          "PerkEntryID": 0,
           "EntryPoint": "ModWeaponAttackDamage",
           "PerkConditionTabCount": 3,
-          "PerkEntryID": 0,
           "ActorValue": "0002C2:Starfield.esm",
           "Value": 0.02,
           "Modification": "MultiplyOnePlusAVMult"
         },
         {
           "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "PerkEntryID": 1,
           "EntryPoint": "SetMaxCarryWeight",
           "PerkConditionTabCount": 1,
-          "PerkEntryID": 1,
           "ActorValue": "0002C2:Starfield.esm",
           "Value": 0.02
         }
@@ -83,7 +82,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16618,
+          "Unknown2": 16631,
           "Data": {
             "MutagenObjectType": "UnknownConditionData",
             "Function": "961",

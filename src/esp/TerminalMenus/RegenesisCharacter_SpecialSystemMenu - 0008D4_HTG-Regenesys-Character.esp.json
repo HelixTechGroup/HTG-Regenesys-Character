@@ -1,7 +1,6 @@
 {
   "FormKey": "0008D4:HTG-Regenesys-Character.esp",
   "EditorID": "RegenesisCharacter_SpecialSystemMenu",
-  "FormVersion": 576,
   "VirtualMachineAdapter": {
     "Scripts": [
       {
@@ -9,43 +8,28 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SQ_CharacterController",
-            "Object": "000907:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "CharismaChanged",
-            "Object": "00097C:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "StrengthChanged",
-            "Object": "000973:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AgilityChanged",
-            "Object": "00097E:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "EnduranceChanged",
             "Object": "00097B:HTG-Regenesys-Character.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "EnduranceValue",
-            "Object": "0002C4:Starfield.esm"
+            "Name": "ResetPoints",
+            "Object": "000A95:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "FirstActivation",
+            "Object": "000988:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "LuckValue",
+            "Object": "0002C8:Starfield.esm"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
             "Name": "PerceptionChanged",
             "Object": "00097A:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "IntelligenceValue",
-            "Object": "0002C6:Starfield.esm"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -55,8 +39,18 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "IntelligenceChanged",
-            "Object": "00097D:HTG-Regenesys-Character.esp"
+            "Name": "AgilityChanged",
+            "Object": "00097E:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CharismaChanged",
+            "Object": "00097C:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AttributeMax",
+            "Object": "000A9D:HTG-Regenesys-Character.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -65,23 +59,13 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "LuckValue",
-            "Object": "0002C8:Starfield.esm"
+            "Name": "EnduranceValue",
+            "Object": "0002C4:Starfield.esm"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AvailablePoints",
-            "Object": "000974:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "StrengthValue",
-            "Object": "0002C2:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "CharismaValue",
-            "Object": "0002C5:Starfield.esm"
+            "Name": "LuckChanged",
+            "Object": "00097F:HTG-Regenesys-Character.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -91,13 +75,23 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "LuckChanged",
-            "Object": "00097F:HTG-Regenesys-Character.esp"
+            "Name": "CharismaValue",
+            "Object": "0002C5:Starfield.esm"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "ResetPoints",
-            "Object": "000A95:HTG-Regenesys-Character.esp"
+            "Name": "StrengthValue",
+            "Object": "0002C2:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AvailablePoints",
+            "Object": "000974:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SQ_CharacterController",
+            "Object": "000907:HTG-Regenesys-Character.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -106,8 +100,18 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "IntelligenceValue",
+            "Object": "0002C6:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "AgilityValue",
             "Object": "0002C7:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "IntelligenceChanged",
+            "Object": "00097D:HTG-Regenesys-Character.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -116,13 +120,8 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AttributeMax",
-            "Object": "000A9D:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "FirstActivation",
-            "Object": "000988:HTG-Regenesys-Character.esp"
+            "Name": "StrengthChanged",
+            "Object": "000973:HTG-Regenesys-Character.esp"
           }
         ]
       }
@@ -151,7 +150,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -159,7 +158,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -179,7 +178,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -188,7 +187,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -217,7 +216,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -225,7 +224,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000A9F:HTG-Regenesys-Character.esp"
@@ -235,7 +234,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000974:HTG-Regenesys-Character.esp"
@@ -243,7 +242,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -269,7 +268,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000973:HTG-Regenesys-Character.esp"
@@ -277,7 +276,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -302,7 +301,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -310,7 +309,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000A9E:HTG-Regenesys-Character.esp"
@@ -320,7 +319,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000974:HTG-Regenesys-Character.esp"
@@ -328,7 +327,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -354,7 +353,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097A:HTG-Regenesys-Character.esp"
@@ -362,7 +361,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -387,7 +386,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -395,7 +394,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000AA0:HTG-Regenesys-Character.esp"
@@ -405,7 +404,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000974:HTG-Regenesys-Character.esp"
@@ -413,7 +412,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -439,7 +438,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097B:HTG-Regenesys-Character.esp"
@@ -447,7 +446,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -473,7 +472,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -481,7 +480,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000AA1:HTG-Regenesys-Character.esp"
@@ -491,7 +490,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000974:HTG-Regenesys-Character.esp"
@@ -499,7 +498,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -526,7 +525,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097C:HTG-Regenesys-Character.esp"
@@ -534,7 +533,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -560,7 +559,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -568,7 +567,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000AA2:HTG-Regenesys-Character.esp"
@@ -578,7 +577,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000974:HTG-Regenesys-Character.esp"
@@ -586,7 +585,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -613,7 +612,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097D:HTG-Regenesys-Character.esp"
@@ -621,7 +620,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -647,7 +646,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -655,7 +654,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000AA3:HTG-Regenesys-Character.esp"
@@ -665,7 +664,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000974:HTG-Regenesys-Character.esp"
@@ -673,7 +672,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -699,7 +698,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097E:HTG-Regenesys-Character.esp"
@@ -707,7 +706,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -733,7 +732,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -741,7 +740,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "IsTrueForConditionFormConditionData",
             "FirstParameter": "000AA4:HTG-Regenesys-Character.esp"
@@ -751,7 +750,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000974:HTG-Regenesys-Character.esp"
@@ -759,7 +758,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -786,7 +785,7 @@
         {
           "MutagenObjectType": "ConditionFloat",
           "CompareOperator": "GreaterThan",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097F:HTG-Regenesys-Character.esp"
@@ -794,7 +793,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -820,7 +819,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -828,7 +827,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -840,7 +839,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097E:HTG-Regenesys-Character.esp"
@@ -852,7 +851,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097B:HTG-Regenesys-Character.esp"
@@ -864,7 +863,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097D:HTG-Regenesys-Character.esp"
@@ -876,7 +875,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097F:HTG-Regenesys-Character.esp"
@@ -888,7 +887,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097C:HTG-Regenesys-Character.esp"
@@ -900,7 +899,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097A:HTG-Regenesys-Character.esp"
@@ -912,7 +911,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000973:HTG-Regenesys-Character.esp"
@@ -937,7 +936,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -945,7 +944,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -957,7 +956,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000973:HTG-Regenesys-Character.esp"
@@ -969,7 +968,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097A:HTG-Regenesys-Character.esp"
@@ -981,7 +980,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097B:HTG-Regenesys-Character.esp"
@@ -993,7 +992,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097C:HTG-Regenesys-Character.esp"
@@ -1005,7 +1004,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097D:HTG-Regenesys-Character.esp"
@@ -1017,7 +1016,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097E:HTG-Regenesys-Character.esp"
@@ -1029,7 +1028,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "00097F:HTG-Regenesys-Character.esp"
@@ -1057,7 +1056,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -1065,7 +1064,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -1096,7 +1095,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -1105,7 +1104,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"
@@ -1137,7 +1136,7 @@
           "Flags": [
             "OR"
           ],
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000988:HTG-Regenesys-Character.esp"
@@ -1146,7 +1145,7 @@
         },
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "GetGlobalValueConditionData",
             "FirstParameter": "000A95:HTG-Regenesys-Character.esp"

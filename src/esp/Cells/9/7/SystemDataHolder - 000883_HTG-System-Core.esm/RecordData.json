@@ -3,7 +3,6 @@
   "IsCompressed": true,
   "MajorRecordFlagsRaw": 262144,
   "EditorID": "SystemDataHolder",
-  "FormVersion": 576,
   "StarfieldMajorRecordFlags": [
     "Compressed"
   ],
@@ -30,7 +29,7 @@
     "FogHighNearScale": 1.0,
     "FogHighFarScale": 1.0,
     "FarHeightRange": 10000.0,
-    "Unknown2": 290220032
+    "InteriorType": "290220032"
   },
   "LightingTemplate": "Null",
   "WaterHeight": 3.4028235E+38,
@@ -38,9 +37,8 @@
   "Persistent": [
     {
       "MutagenObjectType": "PlacedObject",
-      "FormKey": "000A96:HTG-Regenesys-Character.esp",
+      "FormKey": "000800:HTG-Regenesys-Character.esp",
       "MajorRecordFlagsRaw": 1024,
-      "FormVersion": 576,
       "StarfieldMajorRecordFlags": [
         "0x400"
       ],
@@ -54,7 +52,8 @@
       "Collision": {
         "CollisionLayer": 15
       },
-      "Position": "-1.1032448, -0.48332694, -1.0381503"
+      "Position": "0, 0, 5",
+      "Rotation": "-0.25224724, 0.009080789, -0.9676202"
     }
   ],
   "MajorFlags": [

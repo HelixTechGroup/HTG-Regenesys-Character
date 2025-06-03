@@ -9,30 +9,34 @@ ObjectReference Property PlayerRef Mandatory Const Auto
 Quest Property SQ_CharacterController Mandatory Const Auto
 GameplayOption Property SpecialEnabled Mandatory Const Auto 
 GameplayOption Property ShowAttributesOnLevelUp Mandatory Const Auto
+GlobalVariable Property AttributeMax Mandatory Const Auto
 ObjectReference Property SpecialTerminal Mandatory Const Auto
 ActorValue Property AttributePointsValue Mandatory Const Auto
-Int Property LastLevel Auto Hidden
+ActorValue Property LastLevelValue Mandatory Const Auto
 
 CharacterStageIds _stages
 
 Event OnQuestStarted()
     Parent.OnQuestStarted()
+
+    Actor kPlayer = PlayerRef as Actor
+    Int kLevel = kPlayer.GetLevel()
+    Int kLevelMax = AttributeMax.GetValueInt() * 10
     
-    If SpecialEnabled.GetValue() == 1.0
-        Actor kPlayer = PlayerRef as Actor
+    If SpecialEnabled.GetValue() == 1.0 && kLevel <= kLevelMax
         Bool kShowUI = FloatToBool(ShowAttributesOnLevelUp.GetValue())
-        Int kLevel = kPlayer.GetLevel()
-        Float kPoints = kPlayer.GetValue(AttributePointsValue)
+        Int kPoints = kPlayer.GetValueInt(AttributePointsValue)
+        Int kLastLevel = kPlayer.GetValueInt(LastLevelValue)
         Int kNewPoints = 0
 
-        Int kLevelDiff = kLevel - LastLevel
+        Int kLevelDiff = kLevel - kLastLevel
         If kLevelDiff > 1
             Logger.Log("Level difference greater than 1 detected." + \
-                        "\n\tLastLevel: " + LastLevel + \
+                        "\n\tLastLevel: " + kLastLevel + \
                         "\n\tLevelDifference: " + kLevelDiff)
             Int i = 1
             While i <= kLevelDiff
-                Int kLevelCheck = LastLevel + i
+                Int kLevelCheck = kLastLevel + i
                 kNewPoints += CalculatePoints(kLevelCheck)
                 i += 1
             EndWhile
@@ -40,9 +44,9 @@ Event OnQuestStarted()
             kNewPoints = CalculatePoints(kLevel)
         EndIf
 
-        Int kTotal = Math.Ceiling(kPoints) + kNewPoints
+        Int kTotal = kPoints + kNewPoints
         Logger.Log("PlayerLevelUp\n\tLevel: " + kLevel + \
-                    "\n\tLast Level: " + LastLevel + \
+                    "\n\tLast Level: " + kLastLevel + \
                     "\n\tCurrent Points: " + kPoints + \
                     "\n\tAdded Points: " + kNewPoints + \
                     "\n\tTotal Points: " + kTotal + \
@@ -62,17 +66,23 @@ Event OnQuestStarted()
         ; Else
         ;     SQ_CharacterController.SetStage(_specialNoPointsStageId)
         EndIf
-        LastLevel = kLevel
+        kPlayer.SetValue(LastLevelValue, kLevel)
     EndIf
     Stop()
 EndEvent
 
+Bool Function _Init()
+    _stages = new CharacterStageIds 
+    
+    return Parent._Init() && _stages
+EndFunction
+
 Int Function CalculatePoints(Int akLevel)
     Int kNewPoints = 0
-    If akLevel % 2 != 0
+    If akLevel % 2 == 0
         kNewPoints += 1
     ElseIf akLevel % 10 == 0
-        kNewPoints += 1
+        kNewPoints += 2
     EndIf
 
     Logger.Log("Calculating Attribute Points." + \
@@ -80,10 +90,4 @@ Int Function CalculatePoints(Int akLevel)
                         "\n\tPoints: " + kNewPoints)
 
     return kNewPoints
-EndFunction
-
-Bool Function _Init()
-    _stages = new CharacterStageIds 
-    
-    return Parent._Init() && _stages
 EndFunction

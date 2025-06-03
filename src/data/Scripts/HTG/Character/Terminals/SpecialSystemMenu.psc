@@ -77,17 +77,23 @@ Int _initialPoints
 CharacterStageIds _stages
 Guard _pointGuard ProtectsFunctionLogic
 
+Event OnInit()
+    Parent.OnInit()
+    
+    AvailablePoints.SetValue(0)
+    ClearChangedValues()
+    ; TraceAttributes()
+EndEvent
+
 Event OnTerminalMenuEnter(TerminalMenu akTerminalBase, ObjectReference akTerminalRef)
     Parent.OnTerminalMenuEnter(akTerminalBase, akTerminalRef)
-
-    If !CurrentActor.IsFilled()
-        CurrentActor.ForceRefTo(Game.GetPlayer())
-    EndIf
 
     Actor kPlayer = CurrentActor.GetActorRef()
     _initialPoints = kPlayer.GetValueInt(AvailablePointsValue)
     AvailablePoints.SetValue(_initialPoints)
+    ClearChangedValues()
     TraceAttributes()
+
     SetTextValues(akTerminalRef)
 EndEvent
 
@@ -135,7 +141,7 @@ Event OnTerminalMenuItemRun(int auiMenuItemID, TerminalMenu akTerminalBase, Obje
         EndIf
 
         If FirstActivation.GetValueInt() == 1
-            FirstActivation.SetValue(0.0)
+            FirstActivation.SetValueInt(0)
         EndIf
         ResetPoints.SetValueInt(0)
     ElseIf (auiMenuItemID == _exitItemId)
@@ -151,8 +157,12 @@ Event OnTerminalMenuItemRun(int auiMenuItemID, TerminalMenu akTerminalBase, Obje
 
         ClearAllocatedPoints()
         TraceAttributes()
+    ElseIf (auiMenuItemID == 65535)
+        Logger.Log("Opening Terminal.")
     Else
-        Logger.Log("Current ItemId: " + auiMenuItemID)
+        Logger.Log("Current ItemId: " + auiMenuItemID + \
+                    "\n\tAvailable Points: " + AvailablePoints.GetValueInt())
+        kPlayer.SetValue(AvailablePointsValue, AvailablePoints.GetValue())
         kPlayer.RemovePerk(SpecialDisplay)
         kPlayer.AddPerk(SpecialDisplay)
         ClearAllocatedPoints()
@@ -244,6 +254,9 @@ Function ApplyChangedValues()
     If LuckChanged.GetValue() > 0.0
         kPlayer.SetValue(LuckValue, newLucValue)
     EndIf
+
+    _initialPoints = AvailablePoints.GetValueInt()
+    kPlayer.SetValue(AvailablePointsValue, AvailablePoints.GetValue())
     EndTryLockGuard
 
     ClearChangedValues()
@@ -275,20 +288,43 @@ Function TraceAttributes()
                     "\n\tIntelligence:" + kPlayer.GetValueInt(IntelligenceValue) + \
                     "\n\tAgility:" + kPlayer.GetValueInt(AgilityValue) + \
                     "\n\tLuck:" + kPlayer.GetValueInt(LuckValue))
+
+    ; Logger.Log("Attribute Max Conditions:" + \
+    ;                 "\n\tStrength:" + StrengthMax.IsTrue()); + \
+                    ; "\n\tPerception:" + kPlayer.GetValueInt(PerceptionValue) + \
+                    ; "\n\tEndurance:" + kPlayer.GetValueInt(EnduranceValue) + \
+                    ; "\n\tCharisma:" + kPlayer.GetValueInt(CharismaValue) + \
+                    ; "\n\tIntelligence:" + kPlayer.GetValueInt(IntelligenceValue) + \
+                    ; "\n\tAgility:" + kPlayer.GetValueInt(AgilityValue) + \
+                    ; "\n\tLuck:" + kPlayer.GetValueInt(LuckValue))
 EndFunction
 
 Function ClearAllocatedPoints()
-    AvailablePoints.SetValue(_initialPoints) 
+    Logger.Log("Initial Points to be reset: " + _initialPoints)
+    AvailablePoints.SetValueInt(_initialPoints) 
     ClearChangedValues()
 EndFunction
 
 Function ResetAttributes()
     Actor kPlayer = CurrentActor.GetActorRef()
 
-    ClearAllocatedPoints()
     TraceAttributes()
 
     TryLockGuard _pointGuard
+    Int allocatedPoints = 0
+    If FirstActivation.GetValueInt() == 0
+        allocatedPoints = (kPlayer.GetValueInt(StrengthValue) - 1) +\
+                            (kPlayer.GetValueInt(PerceptionValue) - 1) +\
+                            (kPlayer.GetValueInt(EnduranceValue) - 1) +\
+                            (kPlayer.GetValueInt(CharismaValue) - 1) +\
+                            (kPlayer.GetValueInt(IntelligenceValue) - 1) +\
+                            (kPlayer.GetValueInt(AgilityValue) - 1) +\
+                            (kPlayer.GetValueInt(LuckValue) - 1)
+
+        Logger.Log("Allocated Points to be returned: " + allocatedPoints)
+        AvailablePoints.Mod(allocatedPoints)
+    EndIf
+
     kPlayer.SetValue(StrengthValue, 1)
     kPlayer.SetValue(PerceptionValue, 1)
     kPlayer.SetValue(EnduranceValue, 1)
@@ -298,6 +334,7 @@ Function ResetAttributes()
     kPlayer.SetValue(LuckValue, 1)
     EndTryLockGuard
 
+    ClearChangedValues()
     TraceAttributes()
 EndFunction
 

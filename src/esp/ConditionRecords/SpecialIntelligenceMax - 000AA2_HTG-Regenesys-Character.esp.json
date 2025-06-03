@@ -1,12 +1,11 @@
 {
   "FormKey": "000AA2:HTG-Regenesys-Character.esp",
   "EditorID": "SpecialIntelligenceMax",
-  "FormVersion": 576,
   "Conditions": [
     {
       "MutagenObjectType": "ConditionGlobal",
-      "CompareOperator": "LessThanOrEqualTo",
-      "Unknown2": 7580,
+      "CompareOperator": "LessThan",
+      "Unknown2": 12857,
       "Data": {
         "MutagenObjectType": "GetValueConditionData",
         "RunOnType": "QuestAlias",
@@ -18,7 +17,7 @@
     {
       "MutagenObjectType": "ConditionGlobal",
       "CompareOperator": "LessThan",
-      "Unknown2": 7580,
+      "Unknown2": 12857,
       "Data": {
         "MutagenObjectType": "GetGlobalValueConditionData",
         "FirstParameter": "00097D:HTG-Regenesys-Character.esp"
@@ -26,5 +25,5 @@
       "ComparisonValue": "000A9D:HTG-Regenesys-Character.esp"
     }
   ],
-  "Quest": "000907:HTG-Regenesys-Character.esp"
+  "OwnerQuest": "000907:HTG-Regenesys-Character.esp"
 }

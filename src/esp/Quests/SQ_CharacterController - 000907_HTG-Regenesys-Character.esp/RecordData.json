@@ -1,7 +1,6 @@
 {
   "FormKey": "000907:HTG-Regenesys-Character.esp",
   "EditorID": "SQ_CharacterController",
-  "FormVersion": 576,
   "VirtualMachineAdapter": {
     "Scripts": [
       {
@@ -9,44 +8,8 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialEnabled",
-            "Object": "000926:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SystemUtilities",
-            "Object": "000907:HTG-Regenesys-Character.esp",
-            "Alias": 7
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "SpecialSetup",
             "Object": "000AAD:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialTerminal",
-            "Object": "000A96:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Special_FirstActivation",
-            "Object": "000988:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialPlayerTrait",
-            "Object": "000910:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AvailablePointsValue",
-            "Object": "000972:HTG-Regenesys-Character.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "PlayerRef",
-            "Object": "000014:Starfield.esm"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -55,8 +18,38 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialPlayerTrait",
+            "Object": "000910:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "Special_AttributeMax",
             "Object": "000A9D:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialEnabled",
+            "Object": "000926:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AvailablePointsValue",
+            "Object": "000972:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Special_FirstActivation",
+            "Object": "000988:HTG-Regenesys-Character.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "PlayerRef",
+            "Object": "000014:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialTerminal",
+            "Object": "000800:HTG-Regenesys-Character.esp"
           }
         ]
       }
@@ -138,7 +131,14 @@
             "Name": "HTG:UtilityExt"
           },
           {
-            "Name": "HTG:SystemUtilities"
+            "Name": "HTG:SystemUtilities",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "DebugGlobal",
+                "Object": "0A7D31:Starfield.esm"
+              }
+            ]
           }
         ]
       }
@@ -249,7 +249,7 @@
       ],
       "ALFG": 0,
       "External": {
-        "Quest": "001348:HTG-Regenesys-Core.esm",
+        "Quest": "000001:HTG-Regenesys-Core.esm",
         "AliasID": 7
       },
       "VoiceTypes": "Null"
@@ -264,12 +264,11 @@
       ],
       "ALFG": 0,
       "External": {
-        "Quest": "001348:HTG-Regenesys-Core.esm",
+        "Quest": "000001:HTG-Regenesys-Core.esm",
         "AliasID": 11
       },
       "VoiceTypes": "Null",
       "TerminalMenus": [
-        "0008D3:HTG-Regenesys-Character.esp",
         "0008D4:HTG-Regenesys-Character.esp"
       ]
     },
@@ -278,9 +277,11 @@
       "ID": 13,
       "Name": "CurrentSpecialSystemActor",
       "Flags": [
-        "Optional"
+        "Optional",
+        "StoresText"
       ],
       "ALFG": 0,
+      "UniqueActor": "000007:Starfield.esm",
       "VoiceTypes": "Null"
     }
   ],

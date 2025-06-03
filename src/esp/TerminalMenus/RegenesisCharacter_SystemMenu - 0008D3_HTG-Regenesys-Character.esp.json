@@ -1,7 +1,6 @@
 {
   "FormKey": "0008D3:HTG-Regenesys-Character.esp",
   "EditorID": "RegenesisCharacter_SystemMenu",
-  "FormVersion": 576,
   "Name": {
     "TargetLanguage": "English",
     "Value": "Regenesis:Character->System"
@@ -37,7 +36,7 @@
       "Conditions": [
         {
           "MutagenObjectType": "ConditionFloat",
-          "Unknown2": 16658,
+          "Unknown2": 16670,
           "Data": {
             "MutagenObjectType": "UnknownConditionData",
             "Function": "961",

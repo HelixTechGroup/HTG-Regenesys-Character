@@ -1,0 +1,12 @@
+[
+	"Data\\SCRIPTS\\HTG\\Character\\Special\\SpecialPerksManager.pex",
+	"Data\\SCRIPTS\\HTG\\Character\\Quests\\SQ_CharacterController.pex",
+	"Data\\SCRIPTS\\HTG\\Character\\Quests\\SQ_CharacterLevelEvent.pex",
+	"Data\\SCRIPTS\\HTG\\Character\\Terminals\\SpecialSystemMenu.pex",
+	"Data\\Scripts\\HTG\\Character\\Structs.pex",
+	"Data\\Interface\\skillpatches.gfx",
+	"Data\\Interface\\skillpatches.swf",
+	"Data\\Interface\\skillpatches_lrg.swf",
+	"Data\\Interface\\statusmenu.swf",
+	"Data\\Interface\\statusmenu_lrg.swf"
+]

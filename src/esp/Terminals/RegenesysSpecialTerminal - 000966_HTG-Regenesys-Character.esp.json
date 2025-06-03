@@ -2,7 +2,6 @@
   "FormKey": "000966:HTG-Regenesys-Character.esp",
   "MajorRecordFlagsRaw": 134217728,
   "EditorID": "RegenesysSpecialTerminal",
-  "FormVersion": 576,
   "StarfieldMajorRecordFlags": [
     "0x8000000"
   ],
@@ -10,7 +9,6 @@
     "First": "-1, -1, -1",
     "Second": "1, 1, 1"
   },
-  "ODTY": 0.0,
   "Menu": "0008D4:HTG-Regenesys-Character.esp",
   "Background": "Constellation",
   "Name": {
@@ -18,7 +16,7 @@
     "Value": "S.P.E.C.I.A.L. Systems"
   },
   "Model": {
-    "FLLD": "0x01000000"
+    "LightLayer": 1
   },
   "PNAM": "0xCC4C3300",
   "FNAM": "0x0000",
