@@ -1,0 +1,29 @@
+{
+  "FormKey": "0009AC:HTG-Regenesys-Character-SPECIAL.esp",
+  "EditorID": "IntelligenceAttributeEffect",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Intelligence"
+  },
+  "Keywords": [
+    "000A33:HTG-Regenesys-Character-SPECIAL.esp"
+  ],
+  "Archetype": {
+    "MutagenObjectType": "MagicEffectArchetype",
+    "Type": "Script"
+  },
+  "Flags": [
+    "Recover",
+    "NoDuration",
+    "NoArea"
+  ],
+  "Unknown": "0x000000000000FFFFFFFF000000000000000000000000",
+  "Unknown2": "[]",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "<mag>"
+  },
+  "DATADataTypeState": [
+    "Break0"
+  ]
+}

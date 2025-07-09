@@ -1,0 +1,17 @@
+{
+  "FormKey": "000926:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "EditorID": "RegenesysCharacter_EnableSpecial",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Enable The S.P.E.C.I.A.L. System"
+  },
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "Enables a Fallout like version of The S.P.E.C.I.A.L. System"
+  },
+  "Data": {
+    "MutagenObjectType": "BoolGameplayOptionData",
+    "Value1": true,
+    "Value2": true
+  }
+}

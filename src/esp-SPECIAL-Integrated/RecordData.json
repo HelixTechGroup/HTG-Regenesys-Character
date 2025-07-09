@@ -1,0 +1,26 @@
+{
+  "SpriggitSource": {
+    "PackageName": "Spriggit.Json.Starfield",
+    "Version": "0.38.5"
+  },
+  "ModKey": "HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "GameRelease": "Starfield",
+  "ModHeader": {
+    "Author": "HelixTechGroup",
+    "Description": "This is a part of Project Regenesys, A Vanilla++ take on additional features  and rebalances.\r\nAll additions will try to feel natural to the game and add to its replay.\r\n\r\nThis module is a take on character building.",
+    "MasterReferences": [
+      {
+        "Master": "Starfield.esm"
+      }
+    ],
+    "TransientTypes": [
+      {
+        "FormType": 136,
+        "Links": [
+          "000821:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+        ]
+      }
+    ],
+    "Branch": "Main"
+  }
+}

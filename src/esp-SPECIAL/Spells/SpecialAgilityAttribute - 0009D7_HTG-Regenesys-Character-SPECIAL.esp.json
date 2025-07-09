@@ -1,0 +1,21 @@
+{
+  "FormKey": "0009D7:HTG-Regenesys-Character-SPECIAL.esp",
+  "EditorID": "SpecialAgilityAttribute",
+  "EquipmentType": "013F44:Starfield.esm",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": ""
+  },
+  "Type": [
+    "Ability"
+  ],
+  "CastingPerk": "00098F:HTG-Regenesys-Character-SPECIAL.esp",
+  "Effects": [
+    {
+      "BaseEffect": "14A882:Starfield.esm",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 1
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "FormKey": "000008:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "EditorID": "RegenesysRootOptions",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": ""
+  },
+  "Options": {
+    "MutagenObjectType": "GameplayOptionsGroupLeaf"
+  }
+}

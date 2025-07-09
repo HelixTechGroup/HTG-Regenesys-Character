@@ -1,0 +1,36 @@
+{
+  "FormKey": "000AAD:HTG-Regenesys-Character-SPECIAL.esp",
+  "EditorID": "RegenesysCharacter_SoecialSetup",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "Would you like to setup your S.P.E.C.I.A.L. attributes now?"
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "S.P.E.C.I.A.L. System Setup"
+  },
+  "OwnerQuest": "000907:HTG-Regenesys-Character-SPECIAL.esp",
+  "Flags": [
+    "MessageBox",
+    "0x4"
+  ],
+  "BNAM": 1,
+  "ShortTitle": {
+    "TargetLanguage": "English",
+    "Value": "S.P.E.C.I.A.L. Setup"
+  },
+  "MenuButtons": [
+    {
+      "Text": {
+        "TargetLanguage": "English",
+        "Value": "[Yes]"
+      }
+    },
+    {
+      "Text": {
+        "TargetLanguage": "English",
+        "Value": "[No]"
+      }
+    }
+  ]
+}

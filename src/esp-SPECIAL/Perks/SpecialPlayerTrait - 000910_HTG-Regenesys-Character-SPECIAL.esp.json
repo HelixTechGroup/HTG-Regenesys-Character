@@ -1,0 +1,49 @@
+{
+  "FormKey": "000910:HTG-Regenesys-Character-SPECIAL.esp",
+  "EditorID": "SpecialPlayerTrait",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "S.P.E.C.I.A.L. Player"
+  },
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "Empowered by S.P.E.C.I.A.L. Cosmic Radiation, you set out like the hero out of an RPG, the hero you were meant to be.\nRemember, You're S.P.E.C.I.A.L."
+  },
+  "Flags": [
+    "PcTrait",
+    "PcPlayable"
+  ],
+  "PerkIcon": "Empath",
+  "Ranks": [
+    {
+      "Effects": [
+        {
+          "MutagenObjectType": "PerkAbilityEffect",
+          "Ability": "000A92:HTG-Regenesys-Character-SPECIAL.esp"
+        }
+      ],
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16631,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ],
+      "Description": {
+        "TargetLanguage": "English",
+        "Value": ""
+      }
+    },
+    {
+      "Description": {
+        "TargetLanguage": "English",
+        "Value": ""
+      }
+    }
+  ]
+}

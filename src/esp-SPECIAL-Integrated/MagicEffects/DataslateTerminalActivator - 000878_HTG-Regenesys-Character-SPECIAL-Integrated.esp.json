@@ -1,0 +1,42 @@
+{
+  "FormKey": "000878:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "EditorID": "DataslateTerminalActivator",
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "HTG:DataslateTerminalActivator",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DataslateTerminal",
+            "Object": "000824:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+            "Alias": 5
+          }
+        ]
+      }
+    ]
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Configuration Management Terminal Dataslate Binder"
+  },
+  "Archetype": {
+    "MutagenObjectType": "MagicEffectArchetype",
+    "Type": "Script"
+  },
+  "CastType": "FireAndForget",
+  "Flags": [
+    "NoDuration",
+    "NoMagnitude",
+    "NoArea"
+  ],
+  "Unknown": "0x00000000000000000000000000000000000000000000",
+  "Unknown2": "[]",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "\r\n\r\n"
+  },
+  "DATADataTypeState": [
+    "Break0"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "FormKey": "0009A1:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "EditorID": "RegenesysCharacter_ShowAttributesOnLevelUp",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Show Attributes On Level Up"
+  },
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "Show the S.P.E.C.I.A.L. Attributes System on level up and there are unallocated Attribute points."
+  },
+  "Data": {
+    "MutagenObjectType": "BoolGameplayOptionData",
+    "Value1": true,
+    "Value2": true
+  }
+}

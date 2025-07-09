@@ -1,0 +1,314 @@
+{
+  "FormKey": "000A8F:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "EditorID": "SpecialDisplayPerk",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "SpecialDisplayPerk"
+  },
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": ""
+  },
+  "Flags": [
+    "PcPlayable"
+  ],
+  "Ranks": [
+    {
+      "Effects": [
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "Priority": 100,
+          "Conditions": [
+            {
+              "RunOnTabIndex": 1,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "GetIsIDConditionData",
+                    "FirstParameter": "000914:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            },
+            {
+              "RunOnTabIndex": 2,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "EPMagic_EffectHasKeywordConditionData",
+                    "FirstParameter": "000944:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            }
+          ],
+          "PerkEntryID": 0,
+          "EntryPoint": "ModSpellEffectMagnitude",
+          "PerkConditionTabCount": 4,
+          "ActorValue": "0002C2:Starfield.esm",
+          "Value": 1.0
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "Priority": 100,
+          "Conditions": [
+            {
+              "RunOnTabIndex": 1,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "GetIsIDConditionData",
+                    "FirstParameter": "000914:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            },
+            {
+              "RunOnTabIndex": 2,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "EPMagic_EffectHasKeywordConditionData",
+                    "FirstParameter": "000A2A:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            }
+          ],
+          "PerkEntryID": 1,
+          "EntryPoint": "ModSpellEffectMagnitude",
+          "PerkConditionTabCount": 4,
+          "ActorValue": "0002C3:Starfield.esm",
+          "Value": 1.0
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "Priority": 100,
+          "Conditions": [
+            {
+              "RunOnTabIndex": 1,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "GetIsIDConditionData",
+                    "FirstParameter": "000914:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            },
+            {
+              "RunOnTabIndex": 2,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "EPMagic_EffectHasKeywordConditionData",
+                    "FirstParameter": "000A31:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            }
+          ],
+          "PerkEntryID": 2,
+          "EntryPoint": "ModSpellEffectMagnitude",
+          "PerkConditionTabCount": 4,
+          "ActorValue": "0002C4:Starfield.esm",
+          "Value": 1.0
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "Priority": 100,
+          "Conditions": [
+            {
+              "RunOnTabIndex": 1,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "GetIsIDConditionData",
+                    "FirstParameter": "000914:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            },
+            {
+              "RunOnTabIndex": 2,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "EPMagic_EffectHasKeywordConditionData",
+                    "FirstParameter": "000A32:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            }
+          ],
+          "PerkEntryID": 3,
+          "EntryPoint": "ModSpellEffectMagnitude",
+          "PerkConditionTabCount": 4,
+          "ActorValue": "0002C5:Starfield.esm",
+          "Value": 1.0
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "Priority": 100,
+          "Conditions": [
+            {
+              "RunOnTabIndex": 1,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "GetIsIDConditionData",
+                    "FirstParameter": "000914:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            },
+            {
+              "RunOnTabIndex": 2,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "EPMagic_EffectHasKeywordConditionData",
+                    "FirstParameter": "000A33:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            }
+          ],
+          "PerkEntryID": 4,
+          "EntryPoint": "ModSpellEffectMagnitude",
+          "PerkConditionTabCount": 4,
+          "ActorValue": "0002C6:Starfield.esm",
+          "Value": 1.0
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "Priority": 100,
+          "Conditions": [
+            {
+              "RunOnTabIndex": 1,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "GetIsIDConditionData",
+                    "FirstParameter": "000914:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            },
+            {
+              "RunOnTabIndex": 2,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "EPMagic_EffectHasKeywordConditionData",
+                    "FirstParameter": "0009D5:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            }
+          ],
+          "PerkEntryID": 5,
+          "EntryPoint": "ModSpellEffectMagnitude",
+          "PerkConditionTabCount": 4,
+          "ActorValue": "0002C7:Starfield.esm",
+          "Value": 1.0
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "Priority": 100,
+          "Conditions": [
+            {
+              "RunOnTabIndex": 1,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "GetIsIDConditionData",
+                    "FirstParameter": "000914:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            },
+            {
+              "RunOnTabIndex": 2,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "EPMagic_EffectHasKeywordConditionData",
+                    "FirstParameter": "000A34:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            }
+          ],
+          "PerkEntryID": 6,
+          "EntryPoint": "ModSpellEffectMagnitude",
+          "PerkConditionTabCount": 4,
+          "ActorValue": "0002C8:Starfield.esm",
+          "Value": 1.0
+        },
+        {
+          "MutagenObjectType": "PerkAbilityEffect",
+          "Ability": "000914:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+        }
+      ],
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16631,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ],
+      "Description": {
+        "TargetLanguage": "English",
+        "Value": ""
+      }
+    }
+  ]
+}

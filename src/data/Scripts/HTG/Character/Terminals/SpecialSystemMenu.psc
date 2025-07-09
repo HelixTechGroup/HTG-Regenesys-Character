@@ -137,6 +137,7 @@ Event OnTerminalMenuItemRun(int auiMenuItemID, TerminalMenu akTerminalBase, Obje
         ResetPoints.SetValueInt(1)
     ElseIf (auiMenuItemID == _yesResetItemId) || (auiMenuItemID == _noResetItemId)
         If (auiMenuItemID == _yesResetItemId)
+            ClearAllocatedPoints()
             ResetAttributes()
         EndIf
 

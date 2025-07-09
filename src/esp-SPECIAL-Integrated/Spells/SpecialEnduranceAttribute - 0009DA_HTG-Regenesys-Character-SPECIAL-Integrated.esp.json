@@ -1,0 +1,81 @@
+{
+  "FormKey": "0009DA:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "EditorID": "SpecialEnduranceAttribute",
+  "EquipmentType": "013F44:Starfield.esm",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": ""
+  },
+  "Type": [
+    "Ability"
+  ],
+  "CastingPerk": "00098C:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "Effects": [
+    {
+      "BaseEffect": "04A0D2:Starfield.esm",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 1
+    },
+    {
+      "BaseEffect": "04A0AC:Starfield.esm",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 2
+    },
+    {
+      "BaseEffect": "2EDE5B:Starfield.esm",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 3
+    },
+    {
+      "BaseEffect": "0559A4:Starfield.esm",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 4
+    },
+    {
+      "BaseEffect": "04A0C2:Starfield.esm",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 5
+    },
+    {
+      "BaseEffect": "1CC00A:Starfield.esm",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 6
+    },
+    {
+      "BaseEffect": "1CC00B:Starfield.esm",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 7
+    },
+    {
+      "BaseEffect": "1CC00D:Starfield.esm",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 8
+    },
+    {
+      "BaseEffect": "0DD794:Starfield.esm",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 9
+    },
+    {
+      "BaseEffect": "1CC00A:Starfield.esm",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 10
+    },
+    {
+      "BaseEffect": "1CC00C:Starfield.esm",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 11
+    }
+  ]
+}

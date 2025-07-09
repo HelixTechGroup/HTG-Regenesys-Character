@@ -1,0 +1,15 @@
+{
+  "FormKey": "000009:HTG-Regenesys-Core.esm",
+  "EditorID": "RegenesysRootOptionsGroup",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Regenesis Options"
+  },
+  "Options": {
+    "MutagenObjectType": "GameplayOptionsGroupRoot",
+    "GameplayOptionGroups": [
+      "000008:HTG-Regenesys-Core.esm",
+      "000925:HTG-Regenesys-Character-SPECIAL.esp"
+    ]
+  }
+}

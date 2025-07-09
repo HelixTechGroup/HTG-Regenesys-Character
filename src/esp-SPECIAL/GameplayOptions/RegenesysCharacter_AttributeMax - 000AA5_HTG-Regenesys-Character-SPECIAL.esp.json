@@ -1,0 +1,58 @@
+{
+  "FormKey": "000AA5:HTG-Regenesys-Character-SPECIAL.esp",
+  "EditorID": "RegenesysCharacter_AttributeMax",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Attribute Maximum"
+  },
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "Defines the Highest each Attribute can be set to.\n"
+  },
+  "Data": {
+    "MutagenObjectType": "FloatGameplayOptionData",
+    "Value1": 10.0,
+    "Value2": 10.0,
+    "Min": 10.0,
+    "Max": 20.0,
+    "Step": 5.0
+  },
+  "Rewards": [
+    {
+      "Description": {
+        "TargetLanguage": "English",
+        "Value": ""
+      },
+      "SettingValue": 10.0,
+      "Name": {
+        "TargetLanguage": "English",
+        "Value": "10"
+      },
+      "RewardValue": 0.0
+    },
+    {
+      "Description": {
+        "TargetLanguage": "English",
+        "Value": ""
+      },
+      "SettingValue": 15.0,
+      "Name": {
+        "TargetLanguage": "English",
+        "Value": "15"
+      },
+      "RewardValue": -5.0
+    },
+    {
+      "Description": {
+        "TargetLanguage": "English",
+        "Value": ""
+      },
+      "SettingValue": 20.0,
+      "Name": {
+        "TargetLanguage": "English",
+        "Value": "20"
+      },
+      "RewardValue": -10.0
+    }
+  ]
+}

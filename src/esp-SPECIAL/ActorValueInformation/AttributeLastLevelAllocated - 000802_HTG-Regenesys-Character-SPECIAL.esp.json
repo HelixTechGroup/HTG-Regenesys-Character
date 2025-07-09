@@ -1,0 +1,15 @@
+{
+  "FormKey": "000802:HTG-Regenesys-Character-SPECIAL.esp",
+  "EditorID": "AttributeLastLevelAllocated",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Attribuates Last Level Allocated"
+  },
+  "ContextNotes": "Last Level Attribute Points were allocated",
+  "DefaultValue": 0.0,
+  "Flags": [
+    "DefaultToZero",
+    "MinimumOne"
+  ],
+  "Type": "Variable"
+}

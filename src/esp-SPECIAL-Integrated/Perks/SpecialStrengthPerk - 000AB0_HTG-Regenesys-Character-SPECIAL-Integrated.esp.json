@@ -1,0 +1,100 @@
+{
+  "FormKey": "000AB0:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "EditorID": "SpecialStrengthPerk",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "S.P.E.C.I.A.L. Strength"
+  },
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "Strength is a measure of your raw physical power. It affects how much you can carry, and determines the effectiveness of all melee attacks.\n"
+  },
+  "Categroy": "Physical",
+  "SkillGroup": "Basic",
+  "Flags": [
+    "PcPlayable"
+  ],
+  "PerkIcon": "Patch_Physical_Strength",
+  "Ranks": [
+    {
+      "Effects": [
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "Conditions": [
+            {
+              "RunOnTabIndex": 1,
+              "Conditions": [
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Flags": [
+                    "OR"
+                  ],
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "HasKeywordConditionData",
+                    "FirstParameter": "04A0A4:Starfield.esm"
+                  },
+                  "ComparisonValue": 1.0
+                },
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Flags": [
+                    "OR"
+                  ],
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "HasKeywordConditionData",
+                    "FirstParameter": "04A0A5:Starfield.esm"
+                  },
+                  "ComparisonValue": 1.0
+                },
+                {
+                  "MutagenObjectType": "ConditionFloat",
+                  "Flags": [
+                    "OR"
+                  ],
+                  "Unknown2": 16631,
+                  "Data": {
+                    "MutagenObjectType": "HasKeywordConditionData",
+                    "FirstParameter": "05240E:Starfield.esm"
+                  },
+                  "ComparisonValue": 1.0
+                }
+              ]
+            }
+          ],
+          "PerkEntryID": 0,
+          "EntryPoint": "ModWeaponAttackDamage",
+          "PerkConditionTabCount": 3,
+          "ActorValue": "0002C2:Starfield.esm",
+          "Value": 0.02,
+          "Modification": "MultiplyOnePlusAVMult"
+        },
+        {
+          "MutagenObjectType": "PerkEntryPointModifyActorValue",
+          "PerkEntryID": 1,
+          "EntryPoint": "SetMaxCarryWeight",
+          "PerkConditionTabCount": 1,
+          "ActorValue": "0002C2:Starfield.esm",
+          "Value": 0.02
+        }
+      ],
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16631,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ],
+      "Description": {
+        "TargetLanguage": "English",
+        "Value": "Grants 2% bonus to Melee Damage and 2% bonus to Carry Weight per point allocated to Strength"
+      }
+    }
+  ]
+}

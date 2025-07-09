@@ -81,8 +81,10 @@ Int Function CalculatePoints(Int akLevel)
     Int kNewPoints = 0
     If akLevel % 2 == 0
         kNewPoints += 1
-    ElseIf akLevel % 10 == 0
-        kNewPoints += 2
+    EndIf
+
+    If akLevel % 10 == 0
+        kNewPoints += 1
     EndIf
 
     Logger.Log("Calculating Attribute Points." + \

@@ -27,6 +27,8 @@ Event OnQuestStarted()
 EndEvent
 
 Event OnQuestShutdown()
+    Parent.OnQuestShutdown()
+
     UnregisterForGameplayOptionChangedEvent()
 EndEvent
 
@@ -51,7 +53,8 @@ Event OnStageSet(int auiStageID, int auiItemID)
                 kPlayer.AddPerk(SpecialPlayerTrait)
 
                 WaitForCombatEnd()
-                Utility.Wait(1.333)
+                WaitExt(0.333)
+                
                 Int _setupResponse = SpecialSetup.Show()
                 If (_setupResponse == 0)
                     SpecialTerminal.Activate(kPlayer)

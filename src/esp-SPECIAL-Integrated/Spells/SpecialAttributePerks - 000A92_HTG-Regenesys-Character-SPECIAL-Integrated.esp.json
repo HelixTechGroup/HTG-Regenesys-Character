@@ -1,0 +1,20 @@
+{
+  "FormKey": "000A92:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "EditorID": "SpecialAttributePerks",
+  "EquipmentType": "013F44:Starfield.esm",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": ""
+  },
+  "Type": [
+    "Ability"
+  ],
+  "Effects": [
+    {
+      "BaseEffect": "000A93:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 1
+    }
+  ]
+}

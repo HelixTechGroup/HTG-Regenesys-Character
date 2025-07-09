@@ -1,0 +1,61 @@
+{
+  "FormKey": "000914:HTG-Regenesys-Character-SPECIAL.esp",
+  "EditorID": "SpecialAttributesDisplay",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "SPECIAL_ATTRIBUTES_DISPLAY"
+  },
+  "EquipmentType": "013F44:Starfield.esm",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": ""
+  },
+  "Type": [
+    "Ability"
+  ],
+  "CastingPerk": "000A8F:HTG-Regenesys-Character-SPECIAL.esp",
+  "Effects": [
+    {
+      "BaseEffect": "0008F4:HTG-Regenesys-Character-SPECIAL.esp",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 1
+    },
+    {
+      "BaseEffect": "0009A0:HTG-Regenesys-Character-SPECIAL.esp",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 2
+    },
+    {
+      "BaseEffect": "0009AB:HTG-Regenesys-Character-SPECIAL.esp",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 3
+    },
+    {
+      "BaseEffect": "0009AA:HTG-Regenesys-Character-SPECIAL.esp",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 4
+    },
+    {
+      "BaseEffect": "0009AC:HTG-Regenesys-Character-SPECIAL.esp",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 5
+    },
+    {
+      "BaseEffect": "0009AD:HTG-Regenesys-Character-SPECIAL.esp",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 6
+    },
+    {
+      "BaseEffect": "0009AE:HTG-Regenesys-Character-SPECIAL.esp",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 7
+    }
+  ]
+}
