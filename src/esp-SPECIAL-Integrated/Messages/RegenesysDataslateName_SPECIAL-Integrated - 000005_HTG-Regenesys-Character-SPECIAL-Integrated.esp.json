@@ -1,0 +1,18 @@
+{
+  "FormKey": "000005:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "EditorID": "RegenesysDataslateName_SPECIAL-Integrated",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": ""
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "S.P.E.C.I.A.L. Assistant"
+  },
+  "DisplayTime": 2,
+  "BNAM": 4294967295,
+  "ShortTitle": {
+    "TargetLanguage": "English",
+    "Value": "R.A.D.s"
+  }
+}

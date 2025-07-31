@@ -21,21 +21,21 @@
                 "Properties": [
                   {
                     "MutagenObjectType": "ScriptIntProperty",
+                    "Name": "Major"
+                  },
+                  {
+                    "MutagenObjectType": "ScriptIntProperty",
                     "Name": "Revision",
                     "Data": 152160
                   },
                   {
                     "MutagenObjectType": "ScriptIntProperty",
-                    "Name": "Major"
+                    "Name": "Patch",
+                    "Data": 5
                   },
                   {
                     "MutagenObjectType": "ScriptIntProperty",
                     "Name": "Minor"
-                  },
-                  {
-                    "MutagenObjectType": "ScriptIntProperty",
-                    "Name": "Patch",
-                    "Data": 5
                   }
                 ]
               }
@@ -47,14 +47,9 @@
             "Data": "HTG-Regenesys-Character-SPECIAL-Integrated"
           },
           {
-            "MutagenObjectType": "ScriptBoolProperty",
-            "Name": "IsCoreIntegrated",
-            "Data": true
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "CollectionRegistry",
-            "Object": "000828:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "MutagenObjectType": "ScriptStringProperty",
+            "Name": "FileName",
+            "Data": "HTG-Regenesys-Character-SPECIAL-Integrated"
           },
           {
             "MutagenObjectType": "ScriptStringProperty",
@@ -62,9 +57,14 @@
             "Data": "temp"
           },
           {
-            "MutagenObjectType": "ScriptStringProperty",
-            "Name": "FileName",
-            "Data": "HTG-Regenesys-Character-SPECIAL-Integrated"
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CollectionRegistry",
+            "Object": "000828:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptBoolProperty",
+            "Name": "IsCoreIntegrated",
+            "Data": true
           }
         ]
       }

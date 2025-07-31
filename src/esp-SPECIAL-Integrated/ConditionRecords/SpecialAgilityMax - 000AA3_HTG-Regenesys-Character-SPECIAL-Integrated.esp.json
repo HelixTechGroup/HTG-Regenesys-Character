@@ -5,7 +5,7 @@
     {
       "MutagenObjectType": "ConditionGlobal",
       "CompareOperator": "LessThan",
-      "Unknown2": 6872,
+      "Unknown2": 10360,
       "Data": {
         "MutagenObjectType": "GetValueConditionData",
         "RunOnType": "QuestAlias",
@@ -17,7 +17,7 @@
     {
       "MutagenObjectType": "ConditionGlobal",
       "CompareOperator": "LessThan",
-      "Unknown2": 6872,
+      "Unknown2": 10360,
       "Data": {
         "MutagenObjectType": "GetGlobalValueConditionData",
         "FirstParameter": "00097E:HTG-Regenesys-Character-SPECIAL-Integrated.esp"

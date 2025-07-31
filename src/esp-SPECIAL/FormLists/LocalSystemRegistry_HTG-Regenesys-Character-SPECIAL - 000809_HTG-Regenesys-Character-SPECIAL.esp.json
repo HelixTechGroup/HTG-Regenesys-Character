@@ -1,0 +1,12 @@
+{
+  "FormKey": "000809:HTG-Regenesys-Character-SPECIAL.esp",
+  "EditorID": "LocalSystemRegistry_HTG-Regenesys-Character-SPECIAL",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Local System Registry"
+  },
+  "Items": [
+    "000907:HTG-Regenesys-Character-SPECIAL.esp"
+  ],
+  "AddToList": "000809:HTG-Regenesys-Core.esm"
+}
