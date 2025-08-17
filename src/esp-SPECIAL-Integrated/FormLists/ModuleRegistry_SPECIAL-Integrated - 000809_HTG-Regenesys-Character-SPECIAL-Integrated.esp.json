@@ -1,0 +1,12 @@
+{
+  "FormKey": "000809:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "EditorID": "ModuleRegistry_SPECIAL-Integrated",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Module Registry"
+  },
+  "Items": [
+    "000820:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+  ],
+  "AddToList": "Null"
+}

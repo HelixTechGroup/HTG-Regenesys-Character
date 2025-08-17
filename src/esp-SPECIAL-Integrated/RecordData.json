@@ -1,7 +1,7 @@
 {
   "SpriggitSource": {
     "PackageName": "Spriggit.Json.Starfield",
-    "Version": "0.38.5"
+    "Version": "0.38.7"
   },
   "ModKey": "HTG-Regenesys-Character-SPECIAL-Integrated.esp",
   "GameRelease": "Starfield",
@@ -11,14 +11,6 @@
     "MasterReferences": [
       {
         "Master": "Starfield.esm"
-      }
-    ],
-    "TransientTypes": [
-      {
-        "FormType": 136,
-        "Links": [
-          "000821:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-        ]
       }
     ],
     "Branch": "Main"

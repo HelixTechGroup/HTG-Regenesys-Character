@@ -1,0 +1,1475 @@
+{
+	"Filename" : "MATERIALS\\SetDressing\\VaultBoyBobbleheads\\VaultBoy.mat",
+	"Import" : [ "res:03F7ADED:0846A6FF:0074616D" ],
+	"Objects" : 
+	[
+		{
+			"Components" : 
+			[
+				{
+					"Data" : 
+					{
+						"Name" : "VaultBoy"
+					},
+					"Index" : 0,
+					"Type" : "BSComponentDB::CTName"
+				},
+				{
+					"Data" : 
+					{
+						"ID" : "res:B5EBFC45:000639FF:A4D136CD"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::LayerID"
+				},
+				{
+					"Data" : 
+					{
+						"ID" : "res:FEED12D6:0005DAFE:A64340C8"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::LODMaterialID"
+				}
+			],
+			"Parent" : "Data\\Materials\\Layered\\Root\\LayeredMaterials.mat"
+		},
+		{
+			"Components" : 
+			[
+				{
+					"Data" : 
+					{
+						"Name" : "VaultBoy_Layer1"
+					},
+					"Index" : 0,
+					"Type" : "BSComponentDB::CTName"
+				},
+				{
+					"Data" : 
+					{
+						"ID" : "res:B5EBFC49:000639FF:A4D136CD"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::MaterialID"
+				},
+				{
+					"Data" : 
+					{
+						"ID" : "res:B5EBFC48:000639FF:A4D136CD"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::UVStreamID"
+				}
+			],
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "<this>",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:B5EBFC45:000639FF:A4D136CD",
+			"Parent" : "Data\\Materials\\Layered\\Root\\Layers.mat"
+		},
+		{
+			"Components" : 
+			[
+				{
+					"Data" : 
+					{
+						"Name" : "VaultBoy_UVStreamA"
+					},
+					"Index" : 0,
+					"Type" : "BSComponentDB::CTName"
+				}
+			],
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "res:B5EBFC45:000639FF:A4D136CD",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:B5EBFC48:000639FF:A4D136CD",
+			"Parent" : "Data\\Materials\\Layered\\Root\\UVStreams.mat"
+		},
+		{
+			"Components" : 
+			[
+				{
+					"Data" : 
+					{
+						"Name" : "VaultBoy_Material1"
+					},
+					"Index" : 0,
+					"Type" : "BSComponentDB::CTName"
+				},
+				{
+					"Data" : 
+					{
+						"ID" : "res:D46A0E9F:000639FF:A4D136CD"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::TextureSetID",
+					"Version" : 3
+				}
+			],
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "res:B5EBFC45:000639FF:A4D136CD",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:B5EBFC49:000639FF:A4D136CD",
+			"Parent" : "Data\\Materials\\Layered\\Root\\Materials.mat"
+		},
+		{
+			"Components" : 
+			[
+				{
+					"Data" : 
+					{
+						"Name" : "VaultBoy_TextureSet2"
+					},
+					"Index" : 0,
+					"Type" : "BSComponentDB::CTName"
+				},
+				{
+					"Data" : 
+					{
+						"ResolutionHint" : "Tiling"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::TextureResolutionSetting"
+				},
+				{
+					"Data" : 
+					{
+						"DisableMipBiasHint" : "false"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::MipBiasSetting"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0",
+										"y" : "0",
+										"z" : "0"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0.5",
+										"y" : "0.5",
+										"z" : "1"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 1,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "1",
+										"y" : "1",
+										"z" : "1"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 2,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0",
+										"y" : "0",
+										"z" : "0"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 3,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0",
+										"y" : "0",
+										"z" : "0"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 4,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "1",
+										"y" : "1",
+										"z" : "1"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 5,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0",
+										"y" : "0",
+										"z" : "0"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 6,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0",
+										"y" : "0",
+										"z" : "0"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 7,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0",
+										"y" : "0",
+										"z" : "0"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 8,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0.5",
+										"y" : "0.5",
+										"z" : "0.5"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 9,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0",
+										"y" : "0",
+										"z" : "0"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 10,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0.5",
+										"y" : "0.5",
+										"z" : "0.5"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 11,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0",
+										"y" : "0",
+										"z" : "0"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 12,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0",
+										"y" : "0",
+										"z" : "0"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 13,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0.5",
+										"y" : "0.5",
+										"z" : "0.5"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 14,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0.5",
+										"y" : "0.5",
+										"z" : "0.5"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 15,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0.5",
+										"y" : "0.5",
+										"z" : "0.5"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 16,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0",
+										"y" : "0",
+										"z" : "0"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 17,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0",
+										"y" : "0",
+										"z" : "0"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 18,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "1",
+										"y" : "1",
+										"z" : "1"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 19,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Color" : 
+						{
+							"Data" : 
+							{
+								"Value" : 
+								{
+									"Data" : 
+									{
+										"w" : "1",
+										"x" : "0.5",
+										"y" : "0.5",
+										"z" : "0.5"
+									},
+									"Type" : "XMFLOAT4"
+								}
+							},
+							"Type" : "BSMaterial::Color",
+							"Version" : 1
+						},
+						"Enabled" : "false"
+					},
+					"Index" : 20,
+					"Type" : "BSMaterial::TextureReplacement"
+				},
+				{
+					"Data" : 
+					{
+						"Value" : "MetalRough"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::TextureSetKindComponent"
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : "Data\\Textures\\SetDressing\\VaultBoyBobbleheads\\VaultBoy_d.DDS"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : "Data\\Textures\\SetDressing\\VaultBoyBobbleheads\\VaultBoy_n.DDS"
+					},
+					"Index" : 1,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 2,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : "Data\\Textures\\SetDressing\\VaultBoyBobbleheads\\VaultBoy_Accessories_s.DDS"
+					},
+					"Index" : 3,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 4,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 5,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 6,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 7,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 8,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 9,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 10,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 11,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 12,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 13,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 14,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 15,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 16,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 17,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 18,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 19,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"FileName" : ""
+					},
+					"Index" : 20,
+					"Type" : "BSMaterial::MRTextureFile",
+					"Version" : 2
+				},
+				{
+					"Data" : 
+					{
+						"Value" : "1"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::MaterialParamFloat"
+				}
+			],
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "res:B5EBFC49:000639FF:A4D136CD",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:D46A0E9F:000639FF:A4D136CD"
+		},
+		{
+			"Components" : 
+			[
+				{
+					"Data" : 
+					{
+						"Name" : "Data\\Materials\\SetDressing\\Books\\GenBookB01_BookB06.mat_Medium"
+					},
+					"Index" : 0,
+					"Type" : "BSComponentDB::CTName"
+				},
+				{
+					"Data" : 
+					{
+						"ID" : "res:FEED132F:0005DAFE:A64340C8"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::LayerID"
+				}
+			],
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "<this>",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:FEED12D6:0005DAFE:A64340C8",
+			"Parent" : "res:03F7ADED:0846A6FF:0074616D"
+		},
+		{
+			"Components" : 
+			[
+				{
+					"Data" : 
+					{
+						"Name" : "Data\\Materials\\SetDressing\\Books\\GenBookB01_BookB06.mat_TextureSet1"
+					},
+					"Index" : 0,
+					"Type" : "BSComponentDB::CTName"
+				}
+			],
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "res:FEED1419:0005DAFE:A64340C8",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:FEED131E:0005DAFE:A64340C8",
+			"Parent" : "Data\\Materials\\Layered\\Root\\TextureSets.mat"
+		},
+		{
+			"Components" : 
+			[
+				{
+					"Data" : 
+					{
+						"ID" : "res:FEED1422:0005DAFE:A64340C8"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::MaterialID"
+				},
+				{
+					"Data" : 
+					{
+						"ID" : "res:FEED134F:0005DAFE:A64340C8"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::UVStreamID"
+				}
+			],
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "res:FEED12D6:0005DAFE:A64340C8",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:FEED132F:0005DAFE:A64340C8",
+			"Parent" : "res:FEED140F:0005DAFE:A64340C8"
+		},
+		{
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "res:FEED132F:0005DAFE:A64340C8",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:FEED134F:0005DAFE:A64340C8",
+			"Parent" : "res:FEED13A2:0005DAFE:A64340C8"
+		},
+		{
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "res:FEED1422:0005DAFE:A64340C8",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:FEED138F:0005DAFE:A64340C8",
+			"Parent" : "res:FEED131E:0005DAFE:A64340C8"
+		},
+		{
+			"Components" : 
+			[
+				{
+					"Data" : 
+					{
+						"Name" : "Data\\Materials\\SetDressing\\Books\\GenBookB01_BookB06.mat_UVStream1"
+					},
+					"Index" : 0,
+					"Type" : "BSComponentDB::CTName"
+				}
+			],
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "res:FEED140F:0005DAFE:A64340C8",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:FEED13A2:0005DAFE:A64340C8",
+			"Parent" : "Data\\Materials\\Layered\\Root\\UVStreams.mat"
+		},
+		{
+			"Components" : 
+			[
+				{
+					"Data" : 
+					{
+						"Name" : "Data\\Materials\\SetDressing\\Books\\GenBookB01_BookB06.mat_Layer1"
+					},
+					"Index" : 0,
+					"Type" : "BSComponentDB::CTName"
+				},
+				{
+					"Data" : 
+					{
+						"ID" : "res:FEED1419:0005DAFE:A64340C8"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::MaterialID"
+				},
+				{
+					"Data" : 
+					{
+						"ID" : "res:FEED13A2:0005DAFE:A64340C8"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::UVStreamID"
+				}
+			],
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "<this>",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:FEED140F:0005DAFE:A64340C8",
+			"Parent" : "Data\\Materials\\Layered\\Root\\Layers.mat"
+		},
+		{
+			"Components" : 
+			[
+				{
+					"Data" : 
+					{
+						"Name" : "Data\\Materials\\SetDressing\\Books\\GenBookB01_BookB06.mat_Material1"
+					},
+					"Index" : 0,
+					"Type" : "BSComponentDB::CTName"
+				},
+				{
+					"Data" : 
+					{
+						"ID" : "res:FEED131E:0005DAFE:A64340C8"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::TextureSetID",
+					"Version" : 3
+				},
+				{
+					"Data" : 
+					{
+						"Value" : 
+						{
+							"Data" : 
+							{
+								"w" : "1",
+								"x" : "0.754391",
+								"y" : "0.293126",
+								"z" : "0.153521"
+							},
+							"Type" : "XMFLOAT4"
+						}
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::Color",
+					"Version" : 1
+				}
+			],
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "res:FEED140F:0005DAFE:A64340C8",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:FEED1419:0005DAFE:A64340C8",
+			"Parent" : "Data\\Materials\\Layered\\Root\\Materials.mat"
+		},
+		{
+			"Components" : 
+			[
+				{
+					"Data" : 
+					{
+						"ID" : "res:FEED138F:0005DAFE:A64340C8"
+					},
+					"Index" : 0,
+					"Type" : "BSMaterial::TextureSetID",
+					"Version" : 3
+				}
+			],
+			"Edges" : 
+			[
+				{
+					"EdgeIndex" : 0,
+					"To" : "res:FEED132F:0005DAFE:A64340C8",
+					"Type" : "BSComponentDB2::OuterEdge"
+				}
+			],
+			"ID" : "res:FEED1422:0005DAFE:A64340C8",
+			"Parent" : "res:FEED1419:0005DAFE:A64340C8"
+		}
+	],
+	"Summary" : 
+	{
+		"Layer1" : 
+		{
+			"Parent" : "",
+			"Textures" : 
+			{
+				"Albedo" : 
+				{
+					"File" : "Data\\Textures\\SetDressing\\VaultBoyBobbleheads\\VaultBoy_d.DDS",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"TextureResolutionHint" : "Tiling",
+					"UseReplacement" : false
+				},
+				"AmbientOcclusion" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 1,
+						"y" : 1,
+						"z" : 1
+					},
+					"UseReplacement" : false
+				},
+				"Curvature" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0.5,
+						"y" : 0.5,
+						"z" : 0.5
+					},
+					"UseReplacement" : false
+				},
+				"DepthOffset" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"UseReplacement" : false
+				},
+				"Emissive" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"UseReplacement" : false
+				},
+				"Flow" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0.5,
+						"y" : 0.5,
+						"z" : 0.5
+					},
+					"UseReplacement" : false
+				},
+				"Frost" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"UseReplacement" : false
+				},
+				"HairID" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0.5,
+						"y" : 0.5,
+						"z" : 0.5
+					},
+					"UseReplacement" : false
+				},
+				"Height" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"UseReplacement" : false
+				},
+				"Mask" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"UseReplacement" : false
+				},
+				"Metalness" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"UseReplacement" : false
+				},
+				"Normal" : 
+				{
+					"File" : "Data\\Textures\\SetDressing\\VaultBoyBobbleheads\\VaultBoy_n.DDS",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0.5,
+						"y" : 0.5,
+						"z" : 1
+					},
+					"TextureResolutionHint" : "Tiling",
+					"UseReplacement" : false
+				},
+				"Opacity" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 1,
+						"y" : 1,
+						"z" : 1
+					},
+					"UseReplacement" : false
+				},
+				"OverlayColor" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0.5,
+						"y" : 0.5,
+						"z" : 0.5
+					},
+					"UseReplacement" : false
+				},
+				"OverlayMetalness" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0.5,
+						"y" : 0.5,
+						"z" : 0.5
+					},
+					"UseReplacement" : false
+				},
+				"OverlayRoughness" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0.5,
+						"y" : 0.5,
+						"z" : 0.5
+					},
+					"UseReplacement" : false
+				},
+				"Roughness" : 
+				{
+					"File" : "Data\\Textures\\SetDressing\\VaultBoyBobbleheads\\VaultBoy_Accessories_s.DDS",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"TextureResolutionHint" : "Tiling",
+					"UseReplacement" : false
+				},
+				"ScatteringDirections" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"UseReplacement" : false
+				},
+				"ScatteringForwardAlpha" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"UseReplacement" : false
+				},
+				"SecondaryOpacity" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 1,
+						"y" : 1,
+						"z" : 1
+					},
+					"UseReplacement" : false
+				},
+				"Transmissive" : 
+				{
+					"File" : "",
+					"Replacement" : 
+					{
+						"w" : 1,
+						"x" : 0,
+						"y" : 0,
+						"z" : 0
+					},
+					"UseReplacement" : false
+				}
+			},
+			"Tint" : 
+			{
+				"w" : 0,
+				"x" : 1,
+				"y" : 1,
+				"z" : 1
+			},
+			"UVStream" : 
+			{
+				"Channel" : 0,
+				"Offset" : 
+				{
+					"x" : 0,
+					"y" : 0
+				},
+				"Scale" : 
+				{
+					"x" : 1,
+					"y" : 1
+				}
+			},
+			"UseVertexColorAsTint" : false
+		}
+	},
+	"Version" : 1
+}

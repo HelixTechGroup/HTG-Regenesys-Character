@@ -8,13 +8,8 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "EnduranceChanged",
-            "Object": "00097B:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "CharismaChanged",
-            "Object": "00097C:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "AvailablePointsValue",
+            "Object": "000972:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -23,39 +18,45 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "StrengthValue",
-            "Object": "0002C2:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AvailablePointsValue",
-            "Object": "000972:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SystemUtilities",
-            "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
-            "Alias": 7
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "IntelligenceValue",
             "Object": "0002C6:Starfield.esm"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "FirstActivation",
-            "Object": "000988:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "LuckValue",
+            "Object": "0002C8:Starfield.esm"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "ResetPoints",
-            "Object": "000A95:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "IntelligenceChanged",
+            "Object": "00097D:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AgilityValue",
-            "Object": "0002C7:Starfield.esm"
+            "Name": "AgilityChanged",
+            "Object": "00097E:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "currentActor",
+            "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+            "Alias": 13
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "StrengthValue",
+            "Object": "0002C2:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Utilities",
+            "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+            "Alias": 17
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "StrengthChanged",
+            "Object": "000973:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -84,13 +85,23 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "ResetPoints",
+            "Object": "000A95:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "EnduranceChanged",
+            "Object": "00097B:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "SQ_CharacterController",
             "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "PerceptionChanged",
-            "Object": "00097A:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "FirstActivation",
+            "Object": "000988:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -99,29 +110,18 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "LuckValue",
-            "Object": "0002C8:Starfield.esm"
+            "Name": "PerceptionChanged",
+            "Object": "00097A:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AgilityChanged",
-            "Object": "00097E:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "CharismaChanged",
+            "Object": "00097C:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "IntelligenceChanged",
-            "Object": "00097D:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "currentActor",
-            "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
-            "Alias": 13
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "StrengthChanged",
-            "Object": "000973:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "AgilityValue",
+            "Object": "0002C7:Starfield.esm"
           }
         ]
       }

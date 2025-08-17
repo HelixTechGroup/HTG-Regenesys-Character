@@ -80,6 +80,7 @@ Guard _pointGuard ProtectsFunctionLogic
 Event OnInit()
     Parent.OnInit()
     
+    _stages = new CharacterStageIds
     AvailablePoints.SetValue(0)
     ClearChangedValues()
     ; TraceAttributes()

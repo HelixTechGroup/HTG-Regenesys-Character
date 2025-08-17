@@ -1,0 +1,287 @@
+{
+  "FormKey": "000907:HTG-Regenesys-Character-SPECIAL.esp",
+  "EditorID": "SQ_CharacterController_SPECIAL",
+  "VirtualMachineAdapter": {
+    "Scripts": [
+      {
+        "Name": "HTG:Character:Quests:SQ_CharacterController",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialSetup",
+            "Object": "000AAD:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "PlayerRef",
+            "Object": "000836:HTG-System-Core.esm",
+            "Alias": 7
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialTerminal",
+            "Object": "000800:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialPlayerTrait",
+            "Object": "000910:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialEnabled",
+            "Object": "000926:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AttributeMaxOption",
+            "Object": "000AA5:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Special_AttributeMax",
+            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Special_FirstActivation",
+            "Object": "000988:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AvailablePointsValue",
+            "Object": "000972:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Special_ServiceEnabled",
+            "Object": "000806:HTG-Regenesys-Character-SPECIAL.esp"
+          }
+        ]
+      }
+    ],
+    "Script": {
+      "Name": ""
+    },
+    "Aliases": [
+      {
+        "Property": {
+          "Name": "",
+          "Object": "000907:HTG-Regenesys-Character-SPECIAL.esp",
+          "Alias": 15
+        },
+        "Scripts": [
+          {
+            "Name": "HTG:Quests:ModuleInformation",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "ModInfoForm",
+                "Object": "000807:HTG-Regenesys-Character-SPECIAL.esp"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "000907:HTG-Regenesys-Character-SPECIAL.esp",
+          "Alias": 7
+        },
+        "Scripts": [
+          {
+            "Name": "HTG:SystemUtilities",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "ModInfoAlias",
+                "Object": "000907:HTG-Regenesys-Character-SPECIAL.esp",
+                "Alias": 15
+              }
+            ]
+          },
+          {
+            "Name": "htg:systemlogger",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptStringProperty",
+                "Name": "MainLogName",
+                "Data": "Regenesys"
+              },
+              {
+                "MutagenObjectType": "ScriptStringProperty",
+                "Name": "SubLogName",
+                "Data": "Character"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Regenesys Character System Controller - S.P.E.C.I.A.L."
+  },
+  "Data": {
+    "Flags": [
+      "StartGameEnabled",
+      "AllowRepeatedStages",
+      "StartsEnabled"
+    ],
+    "Priority": 100,
+    "Unused": "0x000000"
+  },
+  "QuestType": "0475F8:Starfield.esm",
+  "Filter": "Regenesys\\Character\\",
+  "UnusedConditions": [],
+  "Stages": [
+    {},
+    {
+      "Index": 100,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "HandlesThe S.P.E.C.I.A.L. System",
+          "StageCompleteDatas": [
+            {
+              "QSRD": "0x00000000"
+            },
+            {
+              "QSRD": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 101,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Conditions": [
+            {
+              "MutagenObjectType": "ConditionFloat",
+              "CompareOperator": "GreaterThan",
+              "Unknown2": 17675,
+              "Data": {
+                "MutagenObjectType": "GetValueConditionData",
+                "FirstParameter": "16779634"
+              }
+            }
+          ],
+          "Note": "Alerts user via Activity of unallocated attribute points",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "S.P.E.C.I.A.L. System"
+          },
+          "StageCompleteDatas": [
+            {
+              "QSRD": "0x00000000"
+            },
+            {
+              "QSRD": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 102,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Placeholder when there are no points",
+          "StageCompleteDatas": [
+            {
+              "QSRD": "0x00000000"
+            },
+            {
+              "QSRD": "[]"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Objectives": [
+    {
+      "Index": 101,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Allocate available attribute points."
+      }
+    }
+  ],
+  "Aliases": [
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 15,
+      "Name": "ModuleInformation",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "Optional",
+        "AllowReuseInQuest",
+        "AllowReserved"
+      ],
+      "ALFG": 0,
+      "LinkedAliases": [
+        {
+          "AliasID": 7
+        }
+      ],
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 7,
+      "Name": "SystemUtilities",
+      "Flags": [
+        "AllowReuseInQuest",
+        "AllowReserved",
+        "ExternalAliasLinked"
+      ],
+      "ALFG": 0,
+      "External": {
+        "Quest": "000005:HTG-Regenesys-Core.esm",
+        "AliasID": 7
+      },
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 11,
+      "Name": "DataslateTerminal",
+      "Flags": [
+        "AllowReuseInQuest",
+        "AllowReserved",
+        "ExternalAliasLinked"
+      ],
+      "ALFG": 0,
+      "External": {
+        "Quest": "000005:HTG-Regenesys-Core.esm",
+        "AliasID": 11
+      },
+      "VoiceTypes": "Null",
+      "TerminalMenus": [
+        "0008D4:HTG-Regenesys-Character-SPECIAL.esp"
+      ]
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 13,
+      "Name": "CurrentSpecialSystemActor",
+      "Flags": [
+        "Optional",
+        "StoresText"
+      ],
+      "ALFG": 0,
+      "UniqueActor": "000007:Starfield.esm",
+      "VoiceTypes": "Null"
+    }
+  ],
+  "QuestGroup": "000001:HTG-Regenesys-Core.esm",
+  "SwfFile": "skillpatches.swf"
+}

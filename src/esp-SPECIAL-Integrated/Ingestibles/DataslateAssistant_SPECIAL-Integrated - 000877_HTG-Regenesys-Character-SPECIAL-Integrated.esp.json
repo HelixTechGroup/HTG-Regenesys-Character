@@ -1,0 +1,36 @@
+{
+  "FormKey": "000877:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "EditorID": "DataslateAssistant_SPECIAL-Integrated",
+  "ObjectBounds": {
+    "First": "-0.1887207, -0.08190918, -0.12384033",
+    "Second": "0.18029785, 0.032989502, 0.1282959"
+  },
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "Configuration Dataslate"
+  },
+  "Keywords": [
+    "2BE987:Starfield.esm"
+  ],
+  "Model": {
+    "File": "Items\\DataSlate\\DataSlate01.nif",
+    "LightLayer": 1
+  },
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": ""
+  },
+  "ConsumeSound": {},
+  "AddictionName": {
+    "TargetLanguage": "English",
+    "Value": ""
+  },
+  "Effects": [
+    {
+      "BaseEffect": "000878:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+      "Data": {},
+      "EFIF": 0,
+      "MUID": 1
+    }
+  ]
+}
