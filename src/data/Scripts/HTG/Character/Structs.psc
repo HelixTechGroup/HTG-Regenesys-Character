@@ -17,7 +17,8 @@ Struct ActorSpecialInfo
 EndStruct
 
 Struct CharacterStageIds
-    int SpecialId = 100
-    int SpecialAlertId = 101
-    int SpecialNoPointsId = 102
+    Int SpecialId = 100
+    Int SpecialAlertId = 101
+    Int SpecialNoPointsId = 102
+    Int SpecialDisplayUpdateId = 103
 EndStruct

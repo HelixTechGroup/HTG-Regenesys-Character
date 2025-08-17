@@ -99,7 +99,7 @@
       ],
       "Description": {
         "TargetLanguage": "English",
-        "Value": "Grants 2% bonus to Reload Speed, 2% bonus to Draw Speed, 2% bonus to Oxygen Amount, 2% bonus to Sneak Detection Skill and 2% to Pickpocket Chance per point allocated to Agility."
+        "Value": "Grants 2% bonus to Reload Speed, Draw Speed, Oxygen Amount, Sneak Detection Skill and Pickpocket Chance per point allocated to Agility."
       }
     }
   ]

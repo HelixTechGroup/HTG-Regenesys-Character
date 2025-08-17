@@ -13,8 +13,9 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SQ_CharacterController",
-            "Object": "000907:HTG-Regenesys-Character-SPECIAL.esp"
+            "Name": "PlayerRef",
+            "Object": "000836:HTG-System-Core.esm",
+            "Alias": 7
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -38,14 +39,13 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AttributePointsValue",
-            "Object": "000972:HTG-Regenesys-Character-SPECIAL.esp"
+            "Name": "SQ_CharacterController",
+            "Object": "000907:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "PlayerRef",
-            "Object": "000836:HTG-System-Core.esm",
-            "Alias": 7
+            "Name": "AttributePointsValue",
+            "Object": "000972:HTG-Regenesys-Character-SPECIAL.esp"
           }
         ]
       }

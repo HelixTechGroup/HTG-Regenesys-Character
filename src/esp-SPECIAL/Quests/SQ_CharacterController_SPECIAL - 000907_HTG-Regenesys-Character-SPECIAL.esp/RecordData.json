@@ -8,8 +8,33 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialSetup",
-            "Object": "000AAD:HTG-Regenesys-Character-SPECIAL.esp"
+            "Name": "SpecialTerminal",
+            "Object": "000800:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialDisplay",
+            "Object": "000A8F:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialPlayerTrait",
+            "Object": "000910:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AttributeMaxOption",
+            "Object": "000AA5:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialEnabled",
+            "Object": "000926:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AvailablePointsValue",
+            "Object": "000972:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -19,28 +44,8 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialTerminal",
-            "Object": "000800:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialPlayerTrait",
-            "Object": "000910:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialEnabled",
-            "Object": "000926:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AttributeMaxOption",
-            "Object": "000AA5:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Special_AttributeMax",
-            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL.esp"
+            "Name": "SpecialSetup",
+            "Object": "000AAD:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -49,8 +54,8 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AvailablePointsValue",
-            "Object": "000972:HTG-Regenesys-Character-SPECIAL.esp"
+            "Name": "Special_AttributeMax",
+            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -193,6 +198,24 @@
         {
           "Flags": [],
           "Note": "Placeholder when there are no points",
+          "StageCompleteDatas": [
+            {
+              "QSRD": "0x00000000"
+            },
+            {
+              "QSRD": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 103,
+      "Unknown": 134,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Handles updating the Attribute Display in the Status menu",
           "StageCompleteDatas": [
             {
               "QSRD": "0x00000000"

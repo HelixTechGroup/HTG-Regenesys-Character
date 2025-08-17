@@ -8,29 +8,14 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AvailablePointsValue",
-            "Object": "000972:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "Special_FirstActivation",
+            "Object": "000988:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
             "Name": "PlayerRef",
             "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
             "Alias": 22
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialEnabled",
-            "Object": "000926:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Special_AttributeMax",
-            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Special_ServiceEnabled",
-            "Object": "000806:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -44,8 +29,8 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Special_FirstActivation",
-            "Object": "000988:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "SpecialEnabled",
+            "Object": "000926:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -56,6 +41,26 @@
             "MutagenObjectType": "ScriptObjectProperty",
             "Name": "AttributeMaxOption",
             "Object": "000AA5:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Special_ServiceEnabled",
+            "Object": "000806:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AvailablePointsValue",
+            "Object": "000972:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Special_AttributeMax",
+            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialDisplay",
+            "Object": "000A8F:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           }
         ]
       },
@@ -123,6 +128,17 @@
         },
         "Scripts": [
           {
+            "Name": "HTG:SystemUtilities",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "ModInfoAlias",
+                "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+                "Alias": 16
+              }
+            ]
+          },
+          {
             "Name": "htg:systemlogger",
             "Properties": [
               {
@@ -134,17 +150,6 @@
                 "MutagenObjectType": "ScriptStringProperty",
                 "Name": "SubLogName",
                 "Data": "Character"
-              }
-            ]
-          },
-          {
-            "Name": "HTG:SystemUtilities",
-            "Properties": [
-              {
-                "MutagenObjectType": "ScriptObjectProperty",
-                "Name": "ModInfoAlias",
-                "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
-                "Alias": 16
               }
             ]
           }
@@ -167,8 +172,9 @@
               },
               {
                 "MutagenObjectType": "ScriptObjectProperty",
-                "Name": "DataSlate",
-                "Object": "000877:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+                "Name": "PlayerRef",
+                "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+                "Alias": 22
               },
               {
                 "MutagenObjectType": "ScriptObjectProperty",
@@ -177,9 +183,8 @@
               },
               {
                 "MutagenObjectType": "ScriptObjectProperty",
-                "Name": "PlayerRef",
-                "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
-                "Alias": 22
+                "Name": "DataSlate",
+                "Object": "000877:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
               }
             ]
           }
@@ -305,6 +310,24 @@
         {
           "Flags": [],
           "Note": "Placeholder when there are no points",
+          "StageCompleteDatas": [
+            {
+              "QSRD": "0x00000000"
+            },
+            {
+              "QSRD": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Index": 103,
+      "Unknown": 134,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Handles updating the Attribute Display in the Status menu",
           "StageCompleteDatas": [
             {
               "QSRD": "0x00000000"

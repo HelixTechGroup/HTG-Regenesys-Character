@@ -1,8 +1,9 @@
 Scriptname HTG:Character:Terminals:SpecialSystemMenu extends HTG:TerminalMenuExt
 import HTG
 import HTG:Character:Structs
+import HTG:Character:Quests
 
-Quest Property SQ_CharacterController Mandatory Const Auto
+SQ_CharacterController Property CharacterController Mandatory Const Auto
 GlobalVariable Property FirstActivation Mandatory Const Auto
 
 Group AttributeDisplay
@@ -134,6 +135,7 @@ Event OnTerminalMenuItemRun(int auiMenuItemID, TerminalMenu akTerminalBase, Obje
         ClearAllocatedPoints()
     ElseIf (auiMenuItemID == _applyItemId)
         ApplyChangedValues()
+        UpdateDisplay()
     ElseIf (auiMenuItemID == _ResetItemId)
         ResetPoints.SetValueInt(1)
     ElseIf (auiMenuItemID == _yesResetItemId) || (auiMenuItemID == _noResetItemId)
@@ -145,19 +147,20 @@ Event OnTerminalMenuItemRun(int auiMenuItemID, TerminalMenu akTerminalBase, Obje
         If FirstActivation.GetValueInt() == 1
             FirstActivation.SetValueInt(0)
         EndIf
+
         ResetPoints.SetValueInt(0)
+        UpdateDisplay()
     ElseIf (auiMenuItemID == _exitItemId)
         kPlayer.SetValue(AvailablePointsValue, AvailablePoints.GetValue())
-        kPlayer.RemovePerk(SpecialDisplay)
-        kPlayer.AddPerk(SpecialDisplay)
 
         If AvailablePoints.GetValue() > 0
-            SQ_CharacterController.SetStage(_stages.SpecialAlertId)
+            CharacterController.SetStage(_stages.SpecialAlertId)
         Else
-            SQ_CharacterController.SetStage(_stages.SpecialNoPointsId)
+            CharacterController.SetStage(_stages.SpecialNoPointsId)
         EndIf
 
         ClearAllocatedPoints()
+        UpdateDisplay()
         TraceAttributes()
     ElseIf (auiMenuItemID == 65535)
         Logger.Log("Opening Terminal.")
@@ -165,9 +168,10 @@ Event OnTerminalMenuItemRun(int auiMenuItemID, TerminalMenu akTerminalBase, Obje
         Logger.Log("Current ItemId: " + auiMenuItemID + \
                     "\n\tAvailable Points: " + AvailablePoints.GetValueInt())
         kPlayer.SetValue(AvailablePointsValue, AvailablePoints.GetValue())
-        kPlayer.RemovePerk(SpecialDisplay)
-        kPlayer.AddPerk(SpecialDisplay)
+        ; kPlayer.RemovePerk(SpecialDisplay)
+        ; kPlayer.AddPerk(SpecialDisplay)
         ClearAllocatedPoints()
+        UpdateDisplay()
         ; TraceAttributes()
     EndIf
 
@@ -196,36 +200,36 @@ Function AddPoint(ActorValue akAttribute, GlobalVariable akAttributeChanged)
     Int kChangedAttr = akAttributeChanged.GetValueInt()
 
     TryLockGuard _pointGuard
-    Int kTotal = (kCurrentAttr + kChangedAttr) + 1
-    Logger.Log("Player Add Point Check:" + \
-                    "\n\tMax Value:" + kMax + \
-                    "\n\tCurrent Value:" + kCurrentAttr + \
-                    "\n\tChanged Value:" + kChangedAttr + \
-                    "\n\tTotal:" + kTotal)
+        Int kTotal = (kCurrentAttr + kChangedAttr) + 1
+        Logger.Log("Player Add Point Check:" + \
+                        "\n\tMax Value:" + kMax + \
+                        "\n\tCurrent Value:" + kCurrentAttr + \
+                        "\n\tChanged Value:" + kChangedAttr + \
+                        "\n\tTotal:" + kTotal)
 
-    If kTotal <= kMax
-        akAttributeChanged.SetValue(akAttributeChanged.GetValue() + 1.0)        
-        AvailablePoints.SetValue(AvailablePoints.GetValue() - 1.0) 
-    EndIf
+        If kTotal <= kMax
+            akAttributeChanged.SetValue(akAttributeChanged.GetValue() + 1.0)        
+            AvailablePoints.SetValue(AvailablePoints.GetValue() - 1.0) 
+        EndIf
     EndTryLockGuard
 EndFunction
 
 Function RemovePoint(GlobalVariable akAttribute)
     TryLockGuard _pointGuard
-    akAttribute.SetValue(akAttribute.GetValue() - 1.0)        
-    AvailablePoints.SetValue(AvailablePoints.GetValue() + 1.0)
+        akAttribute.SetValue(akAttribute.GetValue() - 1.0)        
+        AvailablePoints.SetValue(AvailablePoints.GetValue() + 1.0)
     EndTryLockGuard 
 EndFunction
 
 Function ClearChangedValues()
     TryLockGuard _pointGuard
-    StrengthChanged.SetValueInt(0)
-    PerceptionChanged.SetValueInt(0)
-    EnduranceChanged.SetValueInt(0)
-    CharismaChanged.SetValueInt(0)
-    IntelligenceChanged.SetValueInt(0)
-    AgilityChanged.SetValueInt(0)
-    LuckChanged.SetValueInt(0)
+        StrengthChanged.SetValueInt(0)
+        PerceptionChanged.SetValueInt(0)
+        EnduranceChanged.SetValueInt(0)
+        CharismaChanged.SetValueInt(0)
+        IntelligenceChanged.SetValueInt(0)
+        AgilityChanged.SetValueInt(0)
+        LuckChanged.SetValueInt(0)
     EndTryLockGuard
 EndFunction
 
@@ -235,30 +239,30 @@ Function ApplyChangedValues()
     CalculateNewValues()
 
     TryLockGuard _pointGuard
-    If StrengthChanged.GetValue() > 0.0
-        kPlayer.SetValue(StrengthValue, newStrValue)
-    EndIf
-    If PerceptionChanged.GetValue() > 0.0
-        kPlayer.SetValue(PerceptionValue, newPerValue)
-    EndIf
-    If EnduranceChanged.GetValue() > 0.0
-        kPlayer.SetValue(EnduranceValue, newEndValue)
-    EndIf
-    If CharismaChanged.GetValue() > 0.0
-        kPlayer.SetValue(CharismaValue, newChrValue)
-    EndIf
-    If IntelligenceChanged.GetValue() > 0.0
-        kPlayer.SetValue(IntelligenceValue, newIntValue)
-    EndIf
-    If AgilityChanged.GetValue() > 0.0
-        kPlayer.SetValue(AgilityValue, newAgiValue)
-    EndIf
-    If LuckChanged.GetValue() > 0.0
-        kPlayer.SetValue(LuckValue, newLucValue)
-    EndIf
+        If StrengthChanged.GetValue() > 0.0
+            kPlayer.SetValue(StrengthValue, newStrValue)
+        EndIf
+        If PerceptionChanged.GetValue() > 0.0
+            kPlayer.SetValue(PerceptionValue, newPerValue)
+        EndIf
+        If EnduranceChanged.GetValue() > 0.0
+            kPlayer.SetValue(EnduranceValue, newEndValue)
+        EndIf
+        If CharismaChanged.GetValue() > 0.0
+            kPlayer.SetValue(CharismaValue, newChrValue)
+        EndIf
+        If IntelligenceChanged.GetValue() > 0.0
+            kPlayer.SetValue(IntelligenceValue, newIntValue)
+        EndIf
+        If AgilityChanged.GetValue() > 0.0
+            kPlayer.SetValue(AgilityValue, newAgiValue)
+        EndIf
+        If LuckChanged.GetValue() > 0.0
+            kPlayer.SetValue(LuckValue, newLucValue)
+        EndIf
 
-    _initialPoints = AvailablePoints.GetValueInt()
-    kPlayer.SetValue(AvailablePointsValue, AvailablePoints.GetValue())
+        _initialPoints = AvailablePoints.GetValueInt()
+        kPlayer.SetValue(AvailablePointsValue, AvailablePoints.GetValue())
     EndTryLockGuard
 
     ClearChangedValues()
@@ -269,13 +273,13 @@ Function CalculateNewValues()
     Actor kPlayer = CurrentActor.GetActorRef()
 
     TryLockGuard _pointGuard
-    newStrValue = kPlayer.GetValue(StrengthValue) + StrengthChanged.GetValue()
-    newPerValue = kPlayer.GetValue(PerceptionValue) + PerceptionChanged.GetValue()
-    newEndValue = kPlayer.GetValue(EnduranceValue) + EnduranceChanged.GetValue()
-    newChrValue = kPlayer.GetValue(CharismaValue) + CharismaChanged.GetValue()
-    newIntValue = kPlayer.GetValue(IntelligenceValue) + IntelligenceChanged.GetValue()
-    newAgiValue = kPlayer.GetValue(AgilityValue) + AgilityChanged.GetValue()
-    newLucValue = kPlayer.GetValue(LuckValue) + LuckChanged.GetValue()
+        newStrValue = kPlayer.GetValue(StrengthValue) + StrengthChanged.GetValue()
+        newPerValue = kPlayer.GetValue(PerceptionValue) + PerceptionChanged.GetValue()
+        newEndValue = kPlayer.GetValue(EnduranceValue) + EnduranceChanged.GetValue()
+        newChrValue = kPlayer.GetValue(CharismaValue) + CharismaChanged.GetValue()
+        newIntValue = kPlayer.GetValue(IntelligenceValue) + IntelligenceChanged.GetValue()
+        newAgiValue = kPlayer.GetValue(AgilityValue) + AgilityChanged.GetValue()
+        newLucValue = kPlayer.GetValue(LuckValue) + LuckChanged.GetValue()
     EndTryLockGuard
 EndFunction
 
@@ -313,31 +317,40 @@ Function ResetAttributes()
     TraceAttributes()
 
     TryLockGuard _pointGuard
-    Int allocatedPoints = 0
-    If FirstActivation.GetValueInt() == 0
-        allocatedPoints = (kPlayer.GetValueInt(StrengthValue) - 1) +\
-                            (kPlayer.GetValueInt(PerceptionValue) - 1) +\
-                            (kPlayer.GetValueInt(EnduranceValue) - 1) +\
-                            (kPlayer.GetValueInt(CharismaValue) - 1) +\
-                            (kPlayer.GetValueInt(IntelligenceValue) - 1) +\
-                            (kPlayer.GetValueInt(AgilityValue) - 1) +\
-                            (kPlayer.GetValueInt(LuckValue) - 1)
+        Int allocatedPoints = 0
+        If FirstActivation.GetValueInt() == 0
+            allocatedPoints = (kPlayer.GetValueInt(StrengthValue) - 1) +\
+                                (kPlayer.GetValueInt(PerceptionValue) - 1) +\
+                                (kPlayer.GetValueInt(EnduranceValue) - 1) +\
+                                (kPlayer.GetValueInt(CharismaValue) - 1) +\
+                                (kPlayer.GetValueInt(IntelligenceValue) - 1) +\
+                                (kPlayer.GetValueInt(AgilityValue) - 1) +\
+                                (kPlayer.GetValueInt(LuckValue) - 1)
 
-        Logger.Log("Allocated Points to be returned: " + allocatedPoints)
-        AvailablePoints.Mod(allocatedPoints)
-    EndIf
+            Logger.Log("Allocated Points to be returned: " + allocatedPoints)
+            AvailablePoints.Mod(allocatedPoints)
+        EndIf
 
-    kPlayer.SetValue(StrengthValue, 1)
-    kPlayer.SetValue(PerceptionValue, 1)
-    kPlayer.SetValue(EnduranceValue, 1)
-    kPlayer.SetValue(CharismaValue, 1)
-    kPlayer.SetValue(IntelligenceValue, 1)
-    kPlayer.SetValue(AgilityValue, 1)
-    kPlayer.SetValue(LuckValue, 1)
+        kPlayer.SetValue(StrengthValue, 1)
+        kPlayer.SetValue(PerceptionValue, 1)
+        kPlayer.SetValue(EnduranceValue, 1)
+        kPlayer.SetValue(CharismaValue, 1)
+        kPlayer.SetValue(IntelligenceValue, 1)
+        kPlayer.SetValue(AgilityValue, 1)
+        kPlayer.SetValue(LuckValue, 1)
     EndTryLockGuard
 
     ClearChangedValues()
     TraceAttributes()
+EndFunction
+
+Bool Function UpdateDisplay()
+    If CharacterController.SpecialDisplayDirty
+        return False
+    EndIf
+
+    CharacterController.SpecialDisplayDirty = True
+    return CharacterController.SetStage(_stages.SpecialDisplayUpdateId)
 EndFunction
 
 Bool Function _Init()

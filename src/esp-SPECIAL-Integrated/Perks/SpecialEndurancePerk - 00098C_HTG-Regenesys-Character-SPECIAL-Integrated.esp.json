@@ -72,7 +72,7 @@
       ],
       "Description": {
         "TargetLanguage": "English",
-        "Value": "Grants 2% bonus to Health. 2% reduction in Oxygen Usage while Sprinting and 2% bonus to All Resistances per point allocated to Endurance"
+        "Value": "Grants 2% bonus to Health, and All Resistances, and 2% reduction in Oxygen Usage while Sprinting per point allocated to Endurance"
       }
     }
   ]

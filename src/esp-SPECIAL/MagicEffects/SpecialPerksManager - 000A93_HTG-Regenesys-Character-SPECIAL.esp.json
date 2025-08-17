@@ -8,11 +8,6 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialDisplayPerk",
-            "Object": "000A8F:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "SpecialIntelligencePerk",
             "Object": "00098E:HTG-Regenesys-Character-SPECIAL.esp"
           },
@@ -45,6 +40,11 @@
             "MutagenObjectType": "ScriptObjectProperty",
             "Name": "SpecialAgilityPerk",
             "Object": "00098F:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialDisplayPerk",
+            "Object": "000A8F:HTG-Regenesys-Character-SPECIAL.esp"
           }
         ]
       }

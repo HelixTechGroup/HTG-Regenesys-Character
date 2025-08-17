@@ -10,13 +10,28 @@
   "VirtualMachineAdapter": {
     "Scripts": [
       {
-        "Name": "htg:formutility"
-      },
-      {
         "Name": "htg:intutility"
       },
       {
-        "Name": "htg:timerutility"
+        "Name": "htg:formutility"
+      },
+      {
+        "Name": "htg:systemutilitiesobject",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DebugGlobal",
+            "Object": "0A7D31:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SystemData",
+            "Object": "000AAE:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          }
+        ]
+      },
+      {
+        "Name": "htg:floatutility"
       },
       {
         "Name": "htg:armorutility",
@@ -33,18 +48,8 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "DontShowInUI",
-            "Object": "374EFA:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Clothes",
-            "Object": "0E048C:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "ArmorTypes",
-            "Object": "000819:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "Hat",
+            "Object": "0E048B:Starfield.esm"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -53,28 +58,23 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Hat",
-            "Object": "0E048B:Starfield.esm"
-          }
-        ]
-      },
-      {
-        "Name": "htg:floatutility"
-      },
-      {
-        "Name": "htg:systemutilitiesobject",
-        "Properties": [
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "DebugGlobal",
-            "Object": "0A7D31:Starfield.esm"
+            "Name": "ArmorTypes",
+            "Object": "000819:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SystemData",
-            "Object": "000AAE:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "Clothes",
+            "Object": "0E048C:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DontShowInUI",
+            "Object": "374EFA:Starfield.esm"
           }
         ]
+      },
+      {
+        "Name": "htg:timerutility"
       }
     ]
   },
