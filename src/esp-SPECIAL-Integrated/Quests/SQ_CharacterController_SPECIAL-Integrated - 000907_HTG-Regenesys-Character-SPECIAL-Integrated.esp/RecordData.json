@@ -8,8 +8,14 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialPlayerTrait",
-            "Object": "000910:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "AvailablePointsValue",
+            "Object": "000972:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "PlayerRef",
+            "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+            "Alias": 22
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -18,8 +24,23 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "PlayerRef",
-            "Object": "000014:Starfield.esm"
+            "Name": "Special_AttributeMax",
+            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Special_ServiceEnabled",
+            "Object": "000806:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialTerminal",
+            "Object": "000884:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialPlayerTrait",
+            "Object": "000910:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -28,28 +49,45 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AttributeMaxOption",
-            "Object": "000AA5:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Special_AttributeMax",
-            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialTerminal",
-            "Object": "000ABC:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "SpecialSetup",
             "Object": "000AAD:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AvailablePointsValue",
-            "Object": "000972:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "AttributeMaxOption",
+            "Object": "000AA5:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          }
+        ]
+      },
+      {
+        "Name": "HTG:Quests:SQ_DataslateController",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DataslateLocation",
+            "Object": "0008D5:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "ShowTutorial",
+            "Object": "00083E:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "FirstActivation",
+            "Object": "000830:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DataslateTracker",
+            "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+            "Alias": 19
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "DataslateTerminal",
+            "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+            "Alias": 18
           }
         ]
       }
@@ -62,11 +100,18 @@
         "Property": {
           "Name": "",
           "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
-          "Alias": 15
+          "Alias": 16
         },
         "Scripts": [
           {
-            "Name": "HTG:Quests:ModuleInformation"
+            "Name": "HTG:Quests:ModuleInformation",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "ModInfoForm",
+                "Object": "000820:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+              }
+            ]
           }
         ]
       },
@@ -74,7 +119,7 @@
         "Property": {
           "Name": "",
           "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
-          "Alias": 7
+          "Alias": 17
         },
         "Scripts": [
           {
@@ -93,7 +138,74 @@
             ]
           },
           {
-            "Name": "HTG:SystemUtilities"
+            "Name": "HTG:SystemUtilities",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "ModInfoAlias",
+                "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+                "Alias": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+          "Alias": 19
+        },
+        "Scripts": [
+          {
+            "Name": "HTG:Quests:DataslateTracker",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "FirstActivation",
+                "Object": "000830:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+              },
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "DataSlate",
+                "Object": "000877:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+              },
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "DataslateAdded",
+                "Object": "00083D:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+              },
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "PlayerRef",
+                "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+                "Alias": 22
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Property": {
+          "Name": "",
+          "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+          "Alias": 21
+        },
+        "Scripts": [
+          {
+            "Name": "HTG:Quests:LoadedModules",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "ModuleRegistry",
+                "Object": "000809:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+              },
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "SystemModuleInformationKeyword",
+                "Object": "00080D:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+              }
+            ]
           }
         ]
       }
@@ -117,6 +229,28 @@
   "UnusedConditions": [],
   "Stages": [
     {},
+    {
+      "Index": 5,
+      "Unknown": 158,
+      "LogEntries": [
+        {
+          "Flags": [],
+          "Note": "Tutorial: how to access the Dataslate",
+          "Entry": {
+            "TargetLanguage": "English",
+            "Value": "Open your <Alias=DataslateTracker>"
+          },
+          "StageCompleteDatas": [
+            {
+              "QSRD": "0x00000000"
+            },
+            {
+              "QSRD": "[]"
+            }
+          ]
+        }
+      ]
+    },
     {
       "Index": 100,
       "LogEntries": [
@@ -185,6 +319,14 @@
   ],
   "Objectives": [
     {
+      "Index": 5,
+      "Flags": [],
+      "DisplayText": {
+        "TargetLanguage": "English",
+        "Value": "Open your new <Alias=DataslateTracker>"
+      }
+    },
+    {
       "Index": 101,
       "Flags": [],
       "DisplayText": {
@@ -196,51 +338,101 @@
   "Aliases": [
     {
       "MutagenObjectType": "QuestReferenceAlias",
-      "ID": 15,
+      "ID": 22,
+      "Name": "PlayerRef",
+      "Flags": [
+        "AllowReuseInQuest"
+      ],
+      "ALFG": 0,
+      "UniqueActor": "000007:Starfield.esm",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 16,
       "Name": "ModuleInformation",
       "Flags": [
+        "ReservesLocationOrReference",
         "Optional",
         "AllowReuseInQuest",
-        "AllowReserved",
-        "ExternalAliasLinked"
+        "StoresText",
+        "AllowReserved"
       ],
       "ALFG": 0,
-      "External": {
-        "Quest": "000824:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
-        "AliasID": 11
-      },
       "VoiceTypes": "Null"
     },
     {
       "MutagenObjectType": "QuestReferenceAlias",
-      "ID": 7,
+      "ID": 17,
       "Name": "SystemUtilities",
       "Flags": [
+        "ReservesLocationOrReference",
         "AllowReuseInQuest",
-        "AllowReserved",
-        "ExternalAliasLinked"
+        "AllowReserved"
       ],
       "ALFG": 0,
-      "External": {
-        "Quest": "000824:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
-        "AliasID": 7
-      },
+      "ForcedReference": "000812:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
       "VoiceTypes": "Null"
     },
     {
       "MutagenObjectType": "QuestReferenceAlias",
-      "ID": 11,
+      "ID": 18,
       "Name": "DataslateTerminal",
       "Flags": [
+        "ReservesLocationOrReference",
         "AllowReuseInQuest",
-        "ExternalAliasLinked"
+        "AllowReserved"
       ],
       "ALFG": 0,
-      "External": {
-        "Quest": "000824:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
-        "AliasID": 5
-      },
+      "ForcedReference": "000884:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
       "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestReferenceAlias",
+      "ID": 19,
+      "Name": "DataslateTracker",
+      "Flags": [
+        "ReservesLocationOrReference",
+        "QuestObject",
+        "AllowReuseInQuest",
+        "AllowReserved",
+        "UsesStoredText",
+        "0x80000000",
+        "0x0"
+      ],
+      "ALFG": 0,
+      "CreateReferenceToObject": {
+        "Object": "000877:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+        "AliasID": 22,
+        "Create": "In",
+        "Level": "4"
+      },
+      "DisplayName": "000005:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+      "VoiceTypes": "Null"
+    },
+    {
+      "MutagenObjectType": "QuestCollectionAlias",
+      "Collection": [
+        {
+          "ID": 21,
+          "ALAM": 0,
+          "ReferenceAlias": {
+            "ID": 21,
+            "Name": "LoadedModules",
+            "Flags": [
+              "Optional",
+              "AllowReuseInQuest",
+              "StoresText",
+              "AllowReserved"
+            ],
+            "ALFG": 0,
+            "Keywords": [
+              "00080B:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            ],
+            "VoiceTypes": "Null"
+          }
+        }
+      ]
     },
     {
       "MutagenObjectType": "QuestReferenceAlias",

@@ -8,6 +8,27 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialSetup",
+            "Object": "000AAD:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "PlayerRef",
+            "Object": "000836:HTG-System-Core.esm",
+            "Alias": 7
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialTerminal",
+            "Object": "000800:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialPlayerTrait",
+            "Object": "000910:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "SpecialEnabled",
             "Object": "000926:HTG-Regenesys-Character-SPECIAL.esp"
           },
@@ -18,18 +39,13 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Special_AttributeMax",
+            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "Special_FirstActivation",
             "Object": "000988:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialSetup",
-            "Object": "000AAD:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialPlayerTrait",
-            "Object": "000910:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -38,18 +54,8 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "PlayerRef",
-            "Object": "000014:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Special_AttributeMax",
-            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialTerminal",
-            "Object": "000800:HTG-Regenesys-Character-SPECIAL.esp"
+            "Name": "Special_ServiceEnabled",
+            "Object": "000806:HTG-Regenesys-Character-SPECIAL.esp"
           }
         ]
       }
@@ -85,7 +91,15 @@
         },
         "Scripts": [
           {
-            "Name": "htg:structs"
+            "Name": "HTG:SystemUtilities",
+            "Properties": [
+              {
+                "MutagenObjectType": "ScriptObjectProperty",
+                "Name": "ModInfoAlias",
+                "Object": "000907:HTG-Regenesys-Character-SPECIAL.esp",
+                "Alias": 15
+              }
+            ]
           },
           {
             "Name": "htg:systemlogger",
@@ -99,68 +113,6 @@
                 "MutagenObjectType": "ScriptStringProperty",
                 "Name": "SubLogName",
                 "Data": "Character"
-              }
-            ]
-          },
-          {
-            "Name": "htg:timerutility"
-          },
-          {
-            "Name": "htg:formutility"
-          },
-          {
-            "Name": "htg:intutility"
-          },
-          {
-            "Name": "htg:armorutility",
-            "Properties": [
-              {
-                "MutagenObjectType": "ScriptObjectProperty",
-                "Name": "Backpack",
-                "Object": "23C7BF:Starfield.esm"
-              },
-              {
-                "MutagenObjectType": "ScriptObjectProperty",
-                "Name": "ArmorTypes",
-                "Object": "000819:HTG-System-Core.esm"
-              },
-              {
-                "MutagenObjectType": "ScriptObjectProperty",
-                "Name": "Spacesuit",
-                "Object": "23C7C0:Starfield.esm"
-              },
-              {
-                "MutagenObjectType": "ScriptObjectProperty",
-                "Name": "Clothes",
-                "Object": "0E048C:Starfield.esm"
-              },
-              {
-                "MutagenObjectType": "ScriptObjectProperty",
-                "Name": "Hat",
-                "Object": "0E048B:Starfield.esm"
-              },
-              {
-                "MutagenObjectType": "ScriptObjectProperty",
-                "Name": "Helmet",
-                "Object": "23C7C1:Starfield.esm"
-              },
-              {
-                "MutagenObjectType": "ScriptObjectProperty",
-                "Name": "DontShowInUI",
-                "Object": "374EFA:Starfield.esm"
-              }
-            ]
-          },
-          {
-            "Name": "HTG:UtilityExt"
-          },
-          {
-            "Name": "HTG:SystemUtilities",
-            "Properties": [
-              {
-                "MutagenObjectType": "ScriptObjectProperty",
-                "Name": "DebugGlobal",
-                "Object": "0A7D31:Starfield.esm"
               }
             ]
           }
@@ -182,7 +134,7 @@
     "Unused": "0x000000"
   },
   "QuestType": "0475F8:Starfield.esm",
-  "Filter": "Regenesys\\",
+  "Filter": "Regenesys\\Character\\",
   "UnusedConditions": [],
   "Stages": [
     {},
@@ -212,6 +164,7 @@
             {
               "MutagenObjectType": "ConditionFloat",
               "CompareOperator": "GreaterThan",
+              "Unknown2": 17675,
               "Data": {
                 "MutagenObjectType": "GetValueConditionData",
                 "FirstParameter": "16779634"
@@ -274,6 +227,11 @@
         "AllowReserved"
       ],
       "ALFG": 0,
+      "LinkedAliases": [
+        {
+          "AliasID": 7
+        }
+      ],
       "VoiceTypes": "Null"
     },
     {
@@ -298,6 +256,7 @@
       "Name": "DataslateTerminal",
       "Flags": [
         "AllowReuseInQuest",
+        "AllowReserved",
         "ExternalAliasLinked"
       ],
       "ALFG": 0,

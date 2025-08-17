@@ -10,9 +10,5 @@
     "Value": "S.P.E.C.I.A.L. Assistant"
   },
   "DisplayTime": 2,
-  "BNAM": 4294967295,
-  "ShortTitle": {
-    "TargetLanguage": "English",
-    "Value": "R.A.D.s"
-  }
+  "BNAM": 4294967295
 }

@@ -21,6 +21,9 @@
   "Model": {
     "LightLayer": 1
   },
+  "Keywords": [
+    "00080F:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+  ],
   "MarkerColor": "#00CC4C33",
   "Flags": [
     "IgnoredBySandbox"

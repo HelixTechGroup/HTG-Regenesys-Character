@@ -1,0 +1,11 @@
+{
+  "FormKey": "000806:HTG-Regenesys-Character-SPECIAL.esp",
+  "EditorID": "SQ_CharacterController_SPECIAL_ServiceEnabled",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "The S.P.E.C.I.A.L. System has been Enabled."
+  },
+  "OwnerQuest": "000907:HTG-Regenesys-Character-SPECIAL.esp",
+  "DisplayTime": 2,
+  "BNAM": 4294967295
+}

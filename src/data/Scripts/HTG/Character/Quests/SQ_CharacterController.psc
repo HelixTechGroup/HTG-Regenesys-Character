@@ -4,7 +4,7 @@ import HTG:FormUtility
 import HTG:UtilityExt
 import HTG:Character:Structs
 
-ObjectReference Property PlayerRef Mandatory Const Auto
+ReferenceAlias Property PlayerRef Mandatory Const Auto
 
 Group SPECIAL_System
 GameplayOption Property SpecialEnabled Mandatory Const Auto 
@@ -15,6 +15,7 @@ ActorValue Property AvailablePointsValue Mandatory Const Auto
 Perk Property SpecialPlayerTrait Mandatory Const Auto
 Message Property SpecialSetup Mandatory Const Auto
 ObjectReference Property SpecialTerminal Mandatory Const Auto
+Message Property Special_ServiceEnabled Mandatory Const Auto
 EndGroup
 
 CharacterStageIds _stages
@@ -35,7 +36,7 @@ EndEvent
 Event OnStageSet(int auiStageID, int auiItemID)
     Parent.OnStageSet(auiStageID, auiItemID)
 
-    Actor kPlayer = PlayerRef as Actor
+    Actor kPlayer = PlayerRef.GetActorReference()
 
     If auiStageID == _stages.SpecialId
         If SpecialEnabled.GetValue() == 1.0
@@ -80,8 +81,8 @@ Event OnStageSet(int auiStageID, int auiItemID)
             Int kPoints = kPlayer.GetValueInt(AvailablePointsValue)
             If kPoints > 1
                 Logger.Log("Activating SPECIAL System quest objective.")
-                SetObjectiveActive(_stages.SpecialAlertId)
-                SetObjectiveDisplayed(_stages.SpecialAlertId)
+                SetObjectiveActive(_stages.SpecialAlertId, True)
+                ; SetObjectiveDisplayed(_stages.SpecialAlertId)
             Else
                 SetStage(_stages.SpecialNoPointsId)
             EndIf
@@ -95,7 +96,7 @@ EndEvent
 Event OnGameplayOptionChanged(GameplayOption[] aChangedOptions)
     Parent.OnGameplayOptionChanged(aChangedOptions)
 
-    Actor kPlayer = PlayerRef as Actor
+    Actor kPlayer = PlayerRef.GetActorReference()
 
     If aChangedOptions.Find(SpecialEnabled) >= 0
         SetStage(_stages.SpecialId)

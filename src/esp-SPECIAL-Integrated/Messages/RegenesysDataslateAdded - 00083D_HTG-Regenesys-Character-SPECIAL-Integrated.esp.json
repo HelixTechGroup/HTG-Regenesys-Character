@@ -1,0 +1,11 @@
+{
+  "FormKey": "00083D:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "EditorID": "RegenesysDataslateAdded",
+  "Description": {
+    "TargetLanguage": "English",
+    "Value": "<Alias=DataslateTracker> has been added."
+  },
+  "OwnerQuest": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
+  "DisplayTime": 2,
+  "BNAM": 4294967295
+}

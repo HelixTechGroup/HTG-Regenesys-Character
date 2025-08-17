@@ -13,14 +13,6 @@
         "Master": "Starfield.esm"
       }
     ],
-    "TransientTypes": [
-      {
-        "FormType": 136,
-        "Links": [
-          "000821:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-        ]
-      }
-    ],
     "Branch": "Main"
   }
 }

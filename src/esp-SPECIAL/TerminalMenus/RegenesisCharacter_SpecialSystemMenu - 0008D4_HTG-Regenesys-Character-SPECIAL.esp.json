@@ -8,40 +8,13 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "currentActor",
-            "Object": "000907:HTG-Regenesys-Character-SPECIAL.esp",
-            "Alias": 13
+            "Name": "PerceptionValue",
+            "Object": "0002C3:Starfield.esm"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "IntelligenceValue",
-            "Object": "0002C6:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SystemUtilities",
-            "Object": "000907:HTG-Regenesys-Character-SPECIAL.esp",
-            "Alias": 7
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "StrengthChanged",
-            "Object": "000973:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "StrengthValue",
-            "Object": "0002C2:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AttributeMax",
-            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "EnduranceValue",
-            "Object": "0002C4:Starfield.esm"
+            "Name": "AvailablePoints",
+            "Object": "000974:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -50,8 +23,90 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CharismaChanged",
+            "Object": "00097C:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "StrengthValue",
+            "Object": "0002C2:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "LuckChanged",
+            "Object": "00097F:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "AgilityChanged",
             "Object": "00097E:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "IntelligenceValue",
+            "Object": "0002C6:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Utilities",
+            "Object": "000907:HTG-Regenesys-Character-SPECIAL.esp",
+            "Alias": 7
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "IntelligenceChanged",
+            "Object": "00097D:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "EnduranceValue",
+            "Object": "0002C4:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "EnduranceChanged",
+            "Object": "00097B:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AvailablePointsValue",
+            "Object": "000972:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CharismaValue",
+            "Object": "0002C5:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AttributeMax",
+            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "currentActor",
+            "Object": "000907:HTG-Regenesys-Character-SPECIAL.esp",
+            "Alias": 13
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "StrengthChanged",
+            "Object": "000973:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AgilityValue",
+            "Object": "0002C7:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "ResetPoints",
+            "Object": "000A95:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialDisplay",
+            "Object": "000A8F:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -67,61 +122,6 @@
             "MutagenObjectType": "ScriptObjectProperty",
             "Name": "SQ_CharacterController",
             "Object": "000907:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AvailablePoints",
-            "Object": "000974:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "CharismaValue",
-            "Object": "0002C5:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "LuckChanged",
-            "Object": "00097F:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "PerceptionValue",
-            "Object": "0002C3:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AgilityValue",
-            "Object": "0002C7:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "ResetPoints",
-            "Object": "000A95:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "CharismaChanged",
-            "Object": "00097C:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialDisplay",
-            "Object": "000A8F:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "IntelligenceChanged",
-            "Object": "00097D:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AvailablePointsValue",
-            "Object": "000972:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "EnduranceChanged",
-            "Object": "00097B:HTG-Regenesys-Character-SPECIAL.esp"
           }
         ]
       }

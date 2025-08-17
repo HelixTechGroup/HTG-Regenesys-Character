@@ -8,23 +8,18 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialPerceptionPerk",
-            "Object": "00098B:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "SpecialDisplayPerk",
             "Object": "000A8F:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialCharismaPerk",
-            "Object": "00098D:HTG-Regenesys-Character-SPECIAL.esp"
+            "Name": "SpecialIntelligencePerk",
+            "Object": "00098E:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialStrengthPerk",
-            "Object": "00082F:HTG-Regenesys-Character-SPECIAL.esp"
+            "Name": "SpecialPerceptionPerk",
+            "Object": "00098B:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -33,8 +28,13 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialIntelligencePerk",
-            "Object": "00098E:HTG-Regenesys-Character-SPECIAL.esp"
+            "Name": "SpecialStrengthPerk",
+            "Object": "00082F:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialCharismaPerk",
+            "Object": "00098D:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",

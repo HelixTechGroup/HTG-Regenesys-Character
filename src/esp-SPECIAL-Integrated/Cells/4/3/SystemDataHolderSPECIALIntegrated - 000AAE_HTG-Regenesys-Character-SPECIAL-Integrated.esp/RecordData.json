@@ -34,7 +34,8 @@
   "LightingTemplate": "Null",
   "WaterHeight": 3.4028235E+38,
   "XILS": 1.0,
-  "UnknownGroupData": 41,
+  "UnknownGroupData": 3,
+  "PersistentUnknownGroupData": 1,
   "Persistent": [
     {
       "MutagenObjectType": "PlacedObject",
@@ -61,26 +62,6 @@
       },
       "Position": "0, 0, 5",
       "Rotation": "-0.28033096, 0.006257267, 5.3233023"
-    },
-    {
-      "MutagenObjectType": "PlacedObject",
-      "FormKey": "000ABC:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
-      "MajorRecordFlagsRaw": 1024,
-      "StarfieldMajorRecordFlags": [
-        "0x400"
-      ],
-      "Base": "000966:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
-      "Primitive": {
-        "Bounds": "2, 2, 2",
-        "Color": "#00CC4C33",
-        "Unknown": 0.15,
-        "Type": "Box"
-      },
-      "Collision": {
-        "CollisionLayer": 15
-      },
-      "Position": "-1.5232775, 0.3962573, -0.93521214",
-      "Rotation": "-0.25224724, 0.009080789, 5.315565"
     }
   ],
   "MajorFlags": [

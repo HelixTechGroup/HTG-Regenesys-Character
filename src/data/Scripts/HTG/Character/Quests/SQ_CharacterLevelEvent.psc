@@ -5,7 +5,7 @@ import HTG:UtilityExt
 import HTG:Character:Structs
 import Math
 
-ObjectReference Property PlayerRef Mandatory Const Auto
+ReferenceAlias Property PlayerRef Mandatory Const Auto
 Quest Property SQ_CharacterController Mandatory Const Auto
 GameplayOption Property SpecialEnabled Mandatory Const Auto 
 GameplayOption Property ShowAttributesOnLevelUp Mandatory Const Auto
@@ -19,7 +19,7 @@ CharacterStageIds _stages
 Event OnQuestStarted()
     Parent.OnQuestStarted()
 
-    Actor kPlayer = PlayerRef as Actor
+    Actor kPlayer = PlayerRef.GetActorReference()
     Int kLevel = kPlayer.GetLevel()
     Int kLevelMax = AttributeMax.GetValueInt() * 10
     
