@@ -13,24 +13,19 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialDisplay",
+            "Object": "000A8F:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "PlayerRef",
             "Object": "000907:HTG-Regenesys-Character-SPECIAL-Integrated.esp",
             "Alias": 22
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialTerminal",
-            "Object": "000884:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialPlayerTrait",
-            "Object": "000910:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialEnabled",
-            "Object": "000926:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "Special_AttributeMax",
+            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -44,8 +39,18 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialTerminal",
+            "Object": "000884:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "Special_ServiceEnabled",
             "Object": "000806:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialPlayerTrait",
+            "Object": "000910:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -54,13 +59,8 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Special_AttributeMax",
-            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialDisplay",
-            "Object": "000A8F:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "SpecialEnabled",
+            "Object": "000926:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           }
         ]
       },

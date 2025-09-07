@@ -13,29 +13,8 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "PlayerRef",
-            "Object": "000836:HTG-System-Core.esm",
-            "Alias": 7
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SpecialTerminal",
-            "Object": "000800:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "LastLevelValue",
-            "Object": "000802:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AttributeMax",
-            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "ShowAttributesOnLevelUp",
-            "Object": "0009A1:HTG-Regenesys-Character-SPECIAL.esp"
+            "Name": "AttributePointsValue",
+            "Object": "000972:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -44,8 +23,29 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "AttributePointsValue",
-            "Object": "000972:HTG-Regenesys-Character-SPECIAL.esp"
+            "Name": "ShowAttributesOnLevelUp",
+            "Object": "0009A1:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "AttributeMax",
+            "Object": "000A9D:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "LastLevelValue",
+            "Object": "000802:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SpecialTerminal",
+            "Object": "000800:HTG-Regenesys-Character-SPECIAL.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "PlayerRef",
+            "Object": "000836:HTG-System-Core.esm",
+            "Alias": 7
           }
         ]
       }

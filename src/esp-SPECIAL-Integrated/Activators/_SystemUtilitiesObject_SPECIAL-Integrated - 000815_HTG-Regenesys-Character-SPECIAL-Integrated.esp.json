@@ -10,13 +10,7 @@
   "VirtualMachineAdapter": {
     "Scripts": [
       {
-        "Name": "htg:intutility"
-      },
-      {
-        "Name": "htg:formutility"
-      },
-      {
-        "Name": "htg:systemutilitiesobject",
+        "Name": "HTG:SystemUtilitiesObject",
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -25,21 +19,36 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "PlayerUnityTimesEntered",
+            "Object": "219529:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
             "Name": "SystemData",
             "Object": "000AAE:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "MQ101",
+            "Object": "003448:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "City_NA_Aquilus01",
+            "Object": "07BDBF:Starfield.esm"
           }
         ]
       },
       {
-        "Name": "htg:floatutility"
+        "Name": "HTG:SystemGlobalVariableUtility"
       },
       {
-        "Name": "htg:armorutility",
+        "Name": "HTG:SystemArmorUtility",
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Spacesuit",
-            "Object": "23C7C0:Starfield.esm"
+            "Name": "ArmorTypes",
+            "Object": "000819:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -48,18 +57,8 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Hat",
-            "Object": "0E048B:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Helmet",
-            "Object": "23C7C1:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "ArmorTypes",
-            "Object": "000819:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "DontShowInUI",
+            "Object": "374EFA:Starfield.esm"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -68,13 +67,32 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "DontShowInUI",
-            "Object": "374EFA:Starfield.esm"
+            "Name": "Spacesuit",
+            "Object": "23C7C0:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Helmet",
+            "Object": "23C7C1:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "Hat",
+            "Object": "0E048B:Starfield.esm"
           }
         ]
       },
       {
-        "Name": "htg:timerutility"
+        "Name": "HTG:SystemFormUtility"
+      },
+      {
+        "Name": "HTG:SystemIntUtility"
+      },
+      {
+        "Name": "HTG:SystemFloatUtility"
+      },
+      {
+        "Name": "HTG:SystemTimerUtility"
       }
     ]
   },

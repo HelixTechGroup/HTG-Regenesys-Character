@@ -1,9 +1,9 @@
 Scriptname HTG:Character:Quests:SQ_CharacterController extends HTG:QuestExt
 {Regenesys:Character - System Controller}
 import HTG
-import HTG:FormUtility
+import HTG:SystemFormUtility
 import HTG:UtilityExt
-import HTG:FloatUtility
+import HTG:SystemFloatUtility
 import HTG:Character:Structs
 
 ReferenceAlias Property PlayerRef Mandatory Const Auto

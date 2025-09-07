@@ -1,5 +1,6 @@
 Scriptname HTG:Character:Terminals:SpecialSystemMenu extends HTG:TerminalMenuExt
 import HTG
+import HTG:UtilityExt
 import HTG:Character:Structs
 import HTG:Character:Quests
 
@@ -84,6 +85,7 @@ Event OnInit()
     _stages = new CharacterStageIds
     AvailablePoints.SetValue(0)
     ClearChangedValues()
+
     ; TraceAttributes()
 EndEvent
 
@@ -135,7 +137,8 @@ Event OnTerminalMenuItemRun(int auiMenuItemID, TerminalMenu akTerminalBase, Obje
         ClearAllocatedPoints()
     ElseIf (auiMenuItemID == _applyItemId)
         ApplyChangedValues()
-        UpdateDisplay()
+        ; UpdateObjective()
+        ; UpdateDisplay()
     ElseIf (auiMenuItemID == _ResetItemId)
         ResetPoints.SetValueInt(1)
     ElseIf (auiMenuItemID == _yesResetItemId) || (auiMenuItemID == _noResetItemId)
@@ -149,18 +152,14 @@ Event OnTerminalMenuItemRun(int auiMenuItemID, TerminalMenu akTerminalBase, Obje
         EndIf
 
         ResetPoints.SetValueInt(0)
-        UpdateDisplay()
+        ; UpdateObjective()
+        ; UpdateDisplay()
     ElseIf (auiMenuItemID == _exitItemId)
         kPlayer.SetValue(AvailablePointsValue, AvailablePoints.GetValue())
 
-        If AvailablePoints.GetValue() > 0
-            CharacterController.SetStage(_stages.SpecialAlertId)
-        Else
-            CharacterController.SetStage(_stages.SpecialNoPointsId)
-        EndIf
-
         ClearAllocatedPoints()
-        UpdateDisplay()
+        ; UpdateObjective()
+        ; UpdateDisplay()
         TraceAttributes()
     ElseIf (auiMenuItemID == 65535)
         Logger.Log("Opening Terminal.")
@@ -168,11 +167,10 @@ Event OnTerminalMenuItemRun(int auiMenuItemID, TerminalMenu akTerminalBase, Obje
         Logger.Log("Current ItemId: " + auiMenuItemID + \
                     "\n\tAvailable Points: " + AvailablePoints.GetValueInt())
         kPlayer.SetValue(AvailablePointsValue, AvailablePoints.GetValue())
-        ; kPlayer.RemovePerk(SpecialDisplay)
-        ; kPlayer.AddPerk(SpecialDisplay)
         ClearAllocatedPoints()
+        UpdateObjective()
         UpdateDisplay()
-        ; TraceAttributes()
+        TraceAttributes()
     EndIf
 
     SetTextValues(akTerminalRef)
@@ -265,6 +263,8 @@ Function ApplyChangedValues()
         kPlayer.SetValue(AvailablePointsValue, AvailablePoints.GetValue())
     EndTryLockGuard
 
+    UpdateObjective()
+    UpdateDisplay()
     ClearChangedValues()
     TraceAttributes()
 EndFunction
@@ -329,6 +329,7 @@ Function ResetAttributes()
 
             Logger.Log("Allocated Points to be returned: " + allocatedPoints)
             AvailablePoints.Mod(allocatedPoints)
+            kPlayer.SetValue(AvailablePointsValue, AvailablePoints.GetValue())
         EndIf
 
         kPlayer.SetValue(StrengthValue, 1)
@@ -340,6 +341,8 @@ Function ResetAttributes()
         kPlayer.SetValue(LuckValue, 1)
     EndTryLockGuard
 
+    UpdateObjective()
+    UpdateDisplay()
     ClearChangedValues()
     TraceAttributes()
 EndFunction
@@ -351,6 +354,16 @@ Bool Function UpdateDisplay()
 
     CharacterController.SpecialDisplayDirty = True
     return CharacterController.SetStage(_stages.SpecialDisplayUpdateId)
+EndFunction
+
+Bool Function UpdateObjective()
+    If AvailablePoints.GetValue() > 0
+        return CharacterController.SetStage(_stages.SpecialAlertId)
+    Else
+        return CharacterController.SetStage(_stages.SpecialNoPointsId)
+    EndIf
+
+    return False
 EndFunction
 
 Bool Function _Init()
