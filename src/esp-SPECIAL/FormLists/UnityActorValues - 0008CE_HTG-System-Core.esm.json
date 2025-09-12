@@ -1,0 +1,157 @@
+{
+  "FormKey": "0008CE:HTG-System-Core.esm",
+  "EditorID": "UnityActorValues",
+  "Name": {
+    "TargetLanguage": "English",
+    "Value": "ActorValues that are saved during Unity"
+  },
+  "Items": [
+    "0002C7:Starfield.esm",
+    "000972:HTG-Regenesys-Character-SPECIAL.esp",
+    "0002C5:Starfield.esm",
+    "0002C4:Starfield.esm",
+    "0002C6:Starfield.esm",
+    "0002C8:Starfield.esm",
+    "0002C3:Starfield.esm",
+    "0002C2:Starfield.esm",
+    "000802:HTG-Regenesys-Character-SPECIAL.esp"
+  ],
+  "ConditionalEntries": [
+    {
+      "Index": 0,
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16670,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ]
+    },
+    {
+      "Index": 2,
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16670,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ]
+    },
+    {
+      "Index": 4,
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16670,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ]
+    },
+    {
+      "Index": 6,
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16670,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ]
+    },
+    {
+      "Index": 1,
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16670,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ]
+    },
+    {
+      "Index": 3,
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16670,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ]
+    },
+    {
+      "Index": 8,
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16670,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ]
+    },
+    {
+      "Index": 5,
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16670,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ]
+    },
+    {
+      "Index": 7,
+      "Conditions": [
+        {
+          "MutagenObjectType": "ConditionFloat",
+          "Unknown2": 16670,
+          "Data": {
+            "MutagenObjectType": "UnknownConditionData",
+            "Function": "961",
+            "ParameterOne": 16779558
+          },
+          "ComparisonValue": 1.0
+        }
+      ]
+    }
+  ],
+  "AddToList": "15F47B:Starfield.esm"
+}

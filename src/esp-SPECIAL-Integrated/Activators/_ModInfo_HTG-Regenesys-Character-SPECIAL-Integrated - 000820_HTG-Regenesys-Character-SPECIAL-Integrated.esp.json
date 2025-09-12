@@ -13,14 +13,14 @@
         "Name": "HTG:SystemModuleInformation",
         "Properties": [
           {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "CollectionRegistry",
-            "Object": "000828:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "MutagenObjectType": "ScriptBoolProperty",
+            "Name": "IsCoreIntegrated",
+            "Data": true
           },
           {
-            "MutagenObjectType": "ScriptStringProperty",
-            "Name": "Name",
-            "Data": "Project Regenesys: Character - S.P.E.C.I.A.L. System "
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SystemRegistry",
+            "Object": "000808:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptStringProperty",
@@ -28,14 +28,9 @@
             "Data": "HTG-Regenesys-Charachter-SPECIAL-Integrated"
           },
           {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "LocalSystemRegistry",
-            "Object": "000808:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SystemRegistry",
-            "Object": "000808:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "MutagenObjectType": "ScriptStringProperty",
+            "Name": "description",
+            "Data": ""
           },
           {
             "MutagenObjectType": "ScriptStructProperty",
@@ -54,19 +49,24 @@
             ]
           },
           {
-            "MutagenObjectType": "ScriptStringProperty",
-            "Name": "description",
-            "Data": ""
-          },
-          {
-            "MutagenObjectType": "ScriptBoolProperty",
-            "Name": "IsCoreIntegrated",
-            "Data": true
-          },
-          {
             "MutagenObjectType": "ScriptObjectProperty",
             "Name": "ModuleRegistry",
             "Object": "000809:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "CollectionRegistry",
+            "Object": "000828:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "LocalSystemRegistry",
+            "Object": "000808:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptStringProperty",
+            "Name": "Name",
+            "Data": "Project Regenesys: Character - S.P.E.C.I.A.L. System "
           }
         ]
       }

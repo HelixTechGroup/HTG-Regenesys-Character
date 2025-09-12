@@ -14,23 +14,13 @@
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "ModuleRegistry",
-            "Object": "000832:HTG-System-Core.esm"
+            "Name": "LocalSystemRegistry",
+            "Object": "000809:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "RegenesysModuleRegistry",
-            "Object": "00080A:HTG-Regenesys-Core.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SystemRegistry",
-            "Object": "000837:HTG-System-Core.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "RegenesysSystemRegistry",
-            "Object": "000809:HTG-Regenesys-Core.esm"
+            "MutagenObjectType": "ScriptStringProperty",
+            "Name": "description",
+            "Data": ""
           },
           {
             "MutagenObjectType": "ScriptStructProperty",
@@ -49,14 +39,14 @@
             ]
           },
           {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "RegenesysSystemRegistry",
+            "Object": "000809:HTG-Regenesys-Core.esm"
+          },
+          {
             "MutagenObjectType": "ScriptStringProperty",
             "Name": "Name",
             "Data": "Project Regenesys: Character - S.P.E.C.I.A.L."
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "LocalSystemRegistry",
-            "Object": "000809:HTG-Regenesys-Character-SPECIAL.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -69,9 +59,19 @@
             "Data": "HTG-Regenesys-Character-SPECIAL"
           },
           {
-            "MutagenObjectType": "ScriptStringProperty",
-            "Name": "description",
-            "Data": ""
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SystemRegistry",
+            "Object": "000837:HTG-System-Core.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "ModuleRegistry",
+            "Object": "000832:HTG-System-Core.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "RegenesysModuleRegistry",
+            "Object": "00080A:HTG-Regenesys-Core.esm"
           }
         ]
       }

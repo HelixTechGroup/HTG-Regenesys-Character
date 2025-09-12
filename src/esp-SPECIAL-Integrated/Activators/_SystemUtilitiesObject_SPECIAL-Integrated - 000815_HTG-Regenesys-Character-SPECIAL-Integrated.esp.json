@@ -10,21 +10,45 @@
   "VirtualMachineAdapter": {
     "Scripts": [
       {
-        "Name": "htg:formutility"
-      },
-      {
-        "Name": "htg:intutility"
-      },
-      {
-        "Name": "htg:timerutility"
-      },
-      {
-        "Name": "htg:armorutility",
+        "Name": "HTG:SystemUtilitiesObject",
         "Properties": [
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "Spacesuit",
-            "Object": "23C7C0:Starfield.esm"
+            "Name": "DebugGlobal",
+            "Object": "0A7D31:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "PlayerUnityTimesEntered",
+            "Object": "219529:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "SystemData",
+            "Object": "000AAE:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "MQ101",
+            "Object": "003448:Starfield.esm"
+          },
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "City_NA_Aquilus01",
+            "Object": "07BDBF:Starfield.esm"
+          }
+        ]
+      },
+      {
+        "Name": "HTG:SystemGlobalVariableUtility"
+      },
+      {
+        "Name": "HTG:SystemArmorUtility",
+        "Properties": [
+          {
+            "MutagenObjectType": "ScriptObjectProperty",
+            "Name": "ArmorTypes",
+            "Object": "000819:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -43,8 +67,8 @@
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "ArmorTypes",
-            "Object": "000819:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
+            "Name": "Spacesuit",
+            "Object": "23C7C0:Starfield.esm"
           },
           {
             "MutagenObjectType": "ScriptObjectProperty",
@@ -59,22 +83,16 @@
         ]
       },
       {
-        "Name": "htg:floatutility"
+        "Name": "HTG:SystemFormUtility"
       },
       {
-        "Name": "htg:systemutilitiesobject",
-        "Properties": [
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "DebugGlobal",
-            "Object": "0A7D31:Starfield.esm"
-          },
-          {
-            "MutagenObjectType": "ScriptObjectProperty",
-            "Name": "SystemData",
-            "Object": "000AAE:HTG-Regenesys-Character-SPECIAL-Integrated.esp"
-          }
-        ]
+        "Name": "HTG:SystemIntUtility"
+      },
+      {
+        "Name": "HTG:SystemFloatUtility"
+      },
+      {
+        "Name": "HTG:SystemTimerUtility"
       }
     ]
   },

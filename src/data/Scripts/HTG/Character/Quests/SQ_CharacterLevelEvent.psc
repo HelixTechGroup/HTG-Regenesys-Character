@@ -1,6 +1,6 @@
 Scriptname HTG:Character:Quests:SQ_CharacterLevelEvent extends HTG:QuestExt
 {Regenesys:Character:LevelEvent - System Controller}
-import HTG:FloatUtility
+import HTG:SystemFloatUtility
 import HTG:UtilityExt
 import HTG:Character:Structs
 import Math

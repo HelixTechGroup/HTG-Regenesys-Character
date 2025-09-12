@@ -81,7 +81,7 @@
       ],
       "Description": {
         "TargetLanguage": "English",
-        "Value": "Grants 2% bonus to Research Critical Chance, 2% bonus to Weapon Critical Chance, and 2% bonus to Crafting Freebie Chance per point allocated to Luck"
+        "Value": "Grants 2% bonus to Research Critical Chance, Critical Chance, and Crafting Freebie Chance per point allocated to Luck"
       }
     }
   ]
